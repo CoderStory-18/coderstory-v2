@@ -55,9 +55,11 @@
     <div class="container">
       <div class="row h-90">
         <div class="col-md-8 py-8 flex-grow ">
-          <h1>Giving developers a voice</h1>
+          <h1>New Year, New Look, Your Stories.</h1>
           <p class="lead mt-5">
-              Highlighting the experiences of developers and people learning to code from across the world to create a guide for future coders.
+              We're working on something special right now.
+
+               Sign up for updates on our launch and for early access! 
           </p>
  <div class="row mt-5">
     <form action="https://builtbyher.us19.list-manage.com/subscribe/post?u=3757dc73cf7e45a04dddc18bd&amp;id=70b2a3e203" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate col-md-12 input-glass" target="_blank" novalidate="">
