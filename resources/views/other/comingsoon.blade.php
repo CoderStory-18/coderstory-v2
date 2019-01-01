@@ -19,7 +19,7 @@
 
   <!--  Open Graph Tags -->
   <meta property="og:title" content="CoderStory">
-  <meta property="og:description" content="A responsive, professional, and multipurpose SaaS, Software, Startup and WebApp landing template powered by Bootstrap 4.">
+  <meta property="og:description" content="Highlighting the experiences of developers and people learning to code from across the world to create a guide for future coders.">
   <meta property="og:image" content="https://coderstory.io/thesaas/assets/img/og-img.jpg">
   <meta property="og:url" content="https://coderstory.io/">
   <meta name="twitter:card" content="summary_large_image">
