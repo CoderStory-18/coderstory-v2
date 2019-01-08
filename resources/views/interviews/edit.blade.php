@@ -51,13 +51,18 @@
             </div> 
 
             <div class="form-group">
+                <label for="summary">Interview Summary</label>
+                <input type="textarea" class="form-control"  id="summary" name="summary">
+            </div>
+
+            <div class="form-group">
                 <label for="body">Interview Body</label>
                 <input type="textarea" class="form-control"  id="interviewcreate" name="body" value="{{ $interview->body }}">
             </div>
 
             <div class="form-group">
                 <label for="body">Interview Status</label>
-                <input type="textarea" class="form-control"  id="interviewcreate" name="body" value="{{ $interview->featured }}">
+                <input type="dropdown" class="form-control" name="featured"  id="interviewcreate"  value="{{ $interview->featured }}">
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-success">Update</button>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Interview;
+use App\Tag;
 use Illuminate\Http\Request;
 
 class InterviewController extends Controller
@@ -19,8 +20,8 @@ class InterviewController extends Controller
     public function index()
     {
         $interviews = Interview::all();
-        $selected_categories = [];
-        return view('interviews.index', compact('interviews','selected_categories'));
+        $selected_tags = [];
+        return view('interviews.index', compact('interviews','selected_tags'));
     }
 
     /**
@@ -28,10 +29,10 @@ class InterviewController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Tag $tag)
     {
-        // 
-        return view('interviews.create');
+        $tags = Tag::all();
+        return view('interviews.create', compact('tags'));
     }
 
     /**
@@ -40,12 +41,13 @@ class InterviewController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Tag $tag)
     {
         //
         $interview = Interview::create([
             'title' => request('title'), 
             'slug' => str_slug(request('title'), '-'),
+            'summary' => request('summary'), 
             'body' => request('body'), 
             'featured' => 0, 
             'interview_name' => request('interview_name'),
@@ -55,6 +57,8 @@ class InterviewController extends Controller
             'instagram' => request('instagram'), 
             'website' => request('website')
         ]);
+
+        $interview->tags()->sync($request->tags, false);
 
         return redirect('/interviews');
 
@@ -66,7 +70,7 @@ class InterviewController extends Controller
      * @param  \App\Interview  $interview
      * @return \Illuminate\Http\Response
      */
-    public function show(Interview $interview)
+    public function show(Interview $interview, Tag $tag)
     {
         //
         $interview = Interview::where('slug', $interview->slug)->first();
@@ -102,6 +106,7 @@ class InterviewController extends Controller
         // Update selected interview fields
         $interview->title = request('title');
         $interview->slug = str_slug(request('title'), '-');
+        $interview->summary = request('summary');
         $interview->body = request('body');
         $interview->featured = request('featured');
         $interview->interview_name = request('interview_name');
@@ -110,6 +115,7 @@ class InterviewController extends Controller
         $interview->twitter = request('twitter');
         $interview->instagram = request('instagram');
         $interview->website = request('website');
+        $interview->featured = request('featured');
 
         $interview->save();
 
@@ -137,4 +143,27 @@ class InterviewController extends Controller
         $interviews = Interview::where('featured', 1 )->get();
         return view('index', compact('interviews'));
     }
+
+     /**
+     * Display a listing of the featured based on their tags.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function byTags(Request $request)
+    {
+        $selected_tags = $request->get('tags') ? $request->get('tags') : [];
+
+        $ids = Interview::all()->pluck('id')->all();
+ 
+        foreach ($selected_tags as $selected_tag) {
+            $tag = Tag::get()->where('name', $selected_tag)->first();
+            $tagged_interview_ids = $tag->interviews()->pluck('id')->toArray();
+            $ids = array_intersect($ids, $tagged_interview_ids);
+        }
+ 
+        $interviews = Interview::find($ids);
+        return view('interviews.index', compact('interviews', 'selected_tags'));
+    }
+
+
 }

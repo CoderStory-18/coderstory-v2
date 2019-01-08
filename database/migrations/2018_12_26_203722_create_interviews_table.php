@@ -17,6 +17,7 @@ class CreateInterviewsTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->string('slug')->unique();
+            $table->text('summary')->nullable();
             $table->text('body');
             $table->integer('featured'); 
             $table->string('interview_name');

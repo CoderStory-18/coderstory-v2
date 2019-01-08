@@ -1,4 +1,4 @@
-<footer class="footer" style="background-color: #0D1F2D">
+<footer class="footer stick" data-navbar="sticky" style="background-color: #0D1F2D">
         <div class="container">
           <div class="row gap-y align-items-center">
 
@@ -46,3 +46,19 @@
 <!-- Start of HubSpot Embed Code -->
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5281564.js"></script>
 <!-- End of HubSpot Embed Code -->
+
+
+  <!-- <script type="text/javascript">
+    $('.js-example-basic-multiple').select2();
+    $('.js-example-basic-multiple').select2().val({
+        !! json_encode($interview->tags()->getRelatedIds()) !!
+    }).trigger('change');  
+  </script> -->
+<!-- <script type="text/javascript">
+$(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+    $('.js-example-basic-multiple').select2().val({
+        !! json_encode($interview->tags()->getRelatedIds()) !!
+    }).trigger('change'); 
+});
+</script> -->

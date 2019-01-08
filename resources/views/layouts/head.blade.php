@@ -23,7 +23,7 @@
 
   <!-- Styles -->
   <link href="/css/page.min.css" rel="stylesheet">
-  <link href="/css/style.css" rel="stylesheet">
+  <!-- <link href="/css/app.css" rel="stylesheet"> -->
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">

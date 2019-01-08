@@ -12,4 +12,9 @@ class Interview extends Model
     public function getRouteKeyName() {
         return 'slug';
     }
+
+    public function tags() {
+        // 1 product may have many tags 
+       return $this->belongsToMany(Tag::class);
+    }
 }
