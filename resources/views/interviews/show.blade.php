@@ -40,7 +40,7 @@
 
                 <div class="gap-xy-2 mt-6 mb-4">
                     @foreach($interview->tags as $tag)
-                    <a class="badge badge-pill badge-secondary" href="/tags/{{ $tag->name }}}">{{ $tag->name }}</a>
+                    <a class="badge badge-pill badge-secondary" href="/by_tags?tags[]={{ $tag->name }}">{{ $tag->name }}</a>
                     @endforeach
                 </div>
 

@@ -12,18 +12,24 @@
 */
 
 // Tagging Controller
-Route::get('/interviews/tags/{tag}', 'TagController@interviewIndex');
+// Route::get('/interviews/tags/{tag}', 'TagController@interviewIndex');
+
+Route::get('interviews/by_tags/', 'InterviewController@byTags');
+Auth::routes();
+
+// Interview Controller 
+Route::resource('/interviews', 'InterviewController');
+
 Route::get('/tags', 'TagController@index');
 Route::get('tags/create', 'TagController@create');
 Route::post('tags/', 'TagController@store');
 
 
 // Authentication Routes
-Auth::routes();
+
 Route::get('/home', 'HomeController@index')->name('home');
 
-// Interview Controller 
-Route::resource('/interviews', 'InterviewController');
+
 
 
 
