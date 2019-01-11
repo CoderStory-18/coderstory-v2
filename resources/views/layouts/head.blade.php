@@ -46,7 +46,7 @@
     gtag('config', 'UA-118575748-3');
     </script>
 
-<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5c386f19aea594001162d367&product=social-ab' async='async'></script>
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5c386f19aea594001162d367&product=social-ab' async='async'></script>
 
 </head>
 
