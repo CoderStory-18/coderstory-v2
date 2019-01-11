@@ -1,5 +1,3 @@
-@extends('layouts.app')
-
 @section('content')
 
 <header class="header text-white" style="background-color: #0D1F2D;">

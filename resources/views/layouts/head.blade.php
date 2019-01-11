@@ -46,6 +46,8 @@
     gtag('config', 'UA-118575748-3');
     </script>
 
+<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5c386f19aea594001162d367&product=social-ab' async='async'></script>
+
 </head>
 
 <body data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="0" class="">

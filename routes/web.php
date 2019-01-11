@@ -14,20 +14,20 @@
 // Tagging Controller
 // Route::get('/interviews/tags/{tag}', 'TagController@interviewIndex');
 
-Route::get('interviews/by_tags/', 'InterviewController@byTags');
-Auth::routes();
+// Route::get('interviews/by_tags/', 'InterviewController@byTags');
+// Auth::routes();
 
-// Interview Controller 
-Route::resource('/interviews', 'InterviewController');
+// // Interview Controller 
+// Route::resource('/interviews', 'InterviewController');
 
-Route::get('/tags', 'TagController@index');
-Route::get('tags/create', 'TagController@create');
-Route::post('tags/', 'TagController@store');
+// Route::get('/tags', 'TagController@index');
+// Route::get('tags/create', 'TagController@create');
+// Route::post('tags/', 'TagController@store');
 
 
-// Authentication Routes
+// // Authentication Routes
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
 
 
 
@@ -38,12 +38,12 @@ Route::get('/', function () {
     return view('other.comingsoon');
 });
 
-Route::get('/about', function(){
-    return view('other.about');
-});
-Route::get('/resources', function(){
-    return view('resources.resources');
-});
+// Route::get('/about', function(){
+//     return view('other.about');
+// });
+// Route::get('/resources', function(){
+//     return view('resources.resources');
+// });
 
 Route::get('/privacy', function(){
     return view('other.privacy');
