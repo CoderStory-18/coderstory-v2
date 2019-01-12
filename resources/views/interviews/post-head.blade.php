@@ -29,13 +29,14 @@
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
     <link rel="icon" href="assets/img/favicon.png">
 
+    <!--  Open Graph Tags -->
     <!-- Facebook OG Image -->
-    <meta property="og:image" content="https://placid.app/u/y0kqh?browser%7Cimage=%24DEFAULT%24&browser%7Curl=%24DEFAULT%24&title=%24DEFAULT%24" />
+    <meta property="og:image" content="https://placid.app/u/1mmlv?img={{$interview->interview_profile}}&title={{$interview->title}}&url=https://www.coderstory.io/interviews/{{ $interview->slug }}" />
     <meta property="og:image:height" content="600" />
     <meta property="og:image:width" content="1200" />
 
     <!-- Twitter Card Image -->
-    <meta property="twitter:image" content="https://placid.app/u/y0kqh?browser%7Cimage=%24DEFAULT%24&browser%7Curl=%24DEFAULT%24&title=%24DEFAULT%24" />
+    <meta property="twitter:image" content="https://placid.app/u/1mmlv?img={{$interview->interview_profile}}&title={{$interview->title}}&url=https://www.coderstory.io/interviews/{{ $interview->slug }}" />
     <meta name="twitter:card" content="summary_large_image">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -86,3 +87,7 @@
 
         </div>
     </nav><!-- /.navbar -->
+
+    <main>
+        @yield('content')
+    </main>
