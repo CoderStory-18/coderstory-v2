@@ -41,9 +41,13 @@ Route::get('/', function () {
 Route::get('/about', function(){
     return view('other.about');
 });
-Route::get('/resources', function(){
-    return view('resources.resources');
+
+Route::get('/index', function(){
+    return view('other.index');
 });
+
+Route::resource('/resources', 'ResourceController');
+Route::resource('/blog', 'BlogPostController');
 
 Route::get('/privacy', function(){
     return view('other.privacy');

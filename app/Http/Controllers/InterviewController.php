@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class InterviewController extends Controller
 {
     public function __construct() {
-        $this->middleware('auth', ['except' => ['index', 'show', 'featured', 'byCategories']]);
+        $this->middleware('auth', ['except' => ['index', 'show', 'featured', 'byTags']]);
     }
 
     /**

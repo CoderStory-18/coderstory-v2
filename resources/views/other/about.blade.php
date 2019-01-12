@@ -7,7 +7,7 @@
       <div class="container">
         <div class="row align-items-center h-100">
 
-          <div class="col-md-5 pb-1">
+          <div class="col-md-12 pb-1">
             <h1 class="display-3">About Us</h1>
             <p class="lead-2 fw-400 mb-7">Easily track any workout you can imagine. Use any of our free workouts or make up your own.</p>
           </div>

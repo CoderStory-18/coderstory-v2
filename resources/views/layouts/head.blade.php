@@ -16,7 +16,7 @@
     <script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
     <script>
         tinymce.init({
-            selector: '#interviewcreate',
+            selector: '#create',
             plugins: "link, image, code",
         });
     </script>
@@ -24,6 +24,9 @@
     <!-- Styles -->
     <link href="/css/page.min.css" rel="stylesheet">
     <!-- <link href="/css/app.css" rel="stylesheet"> -->
+
+    <!-- Javascript -->
+    <script src="/js/page.min.js"></script>
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
@@ -37,7 +40,6 @@
     <!-- Twitter Card Image -->
     <meta property="twitter:image" content="https://placid.app/u/y0kqh?browser%7Cimage=%24DEFAULT%24&browser%7Curl=%24DEFAULT%24&title=%24DEFAULT%24" />
     <meta name="twitter:card" content="summary_large_image">
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
     <script>
@@ -47,6 +49,24 @@
 
     gtag('config', 'UA-118575748-3');
     </script>
+
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+  <script>
+  window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#252e39"
+      },
+      "button": {
+        "background": "#14a7d0"
+      }
+    },
+    "theme": "classic",
+    "position": "bottom-right"
+  })});
+  </script>
 
 </head>
 
@@ -59,28 +79,32 @@
 
             <div class="navbar-left">
                 <button class="navbar-toggler" type="button">☰</button>
-                <a class="navbar-brand text-white" href="#">
+                <a class="navbar-brand text-white" href="/">
                     CoderStory
                 </a>
             </div>
 
             <section class="navbar-mobile">
                 <nav class="nav nav-navbar ml-auto">
-                    <a class="nav-link" href="/interviews">Interviews</a>
-                    <a class="nav-link" href="/posts">Blog</a>
+                    <!-- <a class="nav-link" href="/interviews"> Interviews</a>
+                    <a class="nav-link" href="/blog">Blog</a> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#">More<span class="arrow"></span></a>
+                        <a class="nav-link" href="#"> All Access <span class="arrow"></span></a>
                         <nav class="nav align-right">
-                            <a class="nav-link" href="/about">About</a>
-                            <a class="nav-link" href="/resources">Resources</a>
+                            <a class="nav-link disabled nav-dark"><strong>THE CONTENT</strong></a>
+                            <a class="nav-link" href="/interviews"> 👩🏽‍💻 Interviews</a>
+                            <a class="nav-link" href="/blog">📚 Our Blog</a>
+                            <a class="nav-link" href="/resources">🎒 Resources</a>
+                            <div class="dropdown-divider" style="margin-left: 0rem; margin-right: 0rem;"></div>
+                            <a class="nav-link disabled nav-dark"><strong>OUR STORY</strong></a>
+                            <a class="nav-link" href="/about"> 🕶 About</a>
+                            <a class="nav-link" href="https://coderstory.nolt.io"> 🚧 Roadmap</a>
+                            <div class="dropdown-divider" style="margin-left: 0rem; margin-right: 0rem;"></div>
+                            <a class="nav-link disabled nav-dark"><strong>BE INVOLVED</strong></a>
+                            <a class="nav-link" href="/about"> 🖋 Contribute</a>
+                            <a class="nav-link" href="https://coderstory.nolt.io"> ❓ FAQ</a>
                         </nav>
                     </li>
-
-                    <!-- <a class="nav-link" href="/posts">Interviews</a>
-          <a class="nav-link" href="/posts">
-            Submit
-          </a> -->
-
                 </nav>
             </section>
 

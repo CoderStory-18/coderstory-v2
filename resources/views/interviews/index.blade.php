@@ -7,10 +7,10 @@
         <div class="row">
             <div class="col-lg-8 mx-auto">
 
-                <h1>Read the latest interviews from <span class="text-primary" data-typing="Pat Walls, Jessica Wallace, Steph Smith, & many more..."></span>Pat
-                    Walls<span class="typed-cursor">|</span></h1>
-                <p class="lead-2 mt-5">You have got the change to work and thrive with us. We are a small group of
-                    developers who wants to make a family!</p>
+                <h1>Interviews with Developers.</h1>
+                <p class="lead-2 mt-5">
+                    Read stories from developers about their experiences.
+                </p>
 
                 <hr class="w-60px my-7">
 
@@ -95,4 +95,23 @@
 
     </div>
 </section>
+
+<style type="text/css" data-typed-js-css="true">
+        .typed-cursor{
+          opacity: 1;
+        }
+        .typed-cursor.typed-cursor--blink{
+          animation: typedjsBlink 0.7s infinite;
+          -webkit-animation: typedjsBlink 0.7s infinite;
+                  animation: typedjsBlink 0.7s infinite;
+        }
+        @keyframes typedjsBlink{
+          50% { opacity: 0.0; }
+        }
+        @-webkit-keyframes typedjsBlink{
+          0% { opacity: 1; }
+          50% { opacity: 0.0; }
+          100% { opacity: 1; }
+        }
+      </style>
 @endsection
