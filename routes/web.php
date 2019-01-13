@@ -24,13 +24,13 @@ Route::get('/tags', 'TagController@index');
 Route::get('tags/create', 'TagController@create');
 Route::post('tags/', 'TagController@store');
 
+Route::resource('/blog', 'BlogPostController');
+
+Route::resource('/resources', 'ResourceController');
 
 // Authentication Routes
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-
-
 
 
 // Individual Web Pages
@@ -38,14 +38,21 @@ Route::get('/', function () {
     return view('other.comingsoon');
 });
 
+Route::get('/contribute', function(){
+    return view('other.contribute');
+});
+
 Route::get('/about', function(){
     return view('other.about');
 });
 
+Route::get('/faq', function(){
+    return view('other.faq');
+});
+
 Route::get('/index', 'InterviewController@featured');
 
-Route::resource('/resources', 'ResourceController');
-Route::resource('/blog', 'BlogPostController');
+
 
 Route::get('/privacy', function(){
     return view('other.privacy');

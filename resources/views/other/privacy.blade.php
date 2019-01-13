@@ -1,27 +1,29 @@
 @extends('layouts.app')
 @section('content')
 
-  <header class="header text-white" style="background-color: #0D1F2D;">
-      <div class="container text-center">
+<header class="header text-white" style="background-image: url(../img/bg.jpg)" data-overlay="1">
+    <div class="overlay opacity-95" style="background-color: #0D1F2D"></div>
+    <div class="container">
+        <div class="row align-items-center h-100">
 
-        <div class="row">
-          <div class="col-md-8 mx-auto">
+            <div class="col-md-10 pb-1">
+                <h3 class="display-4">🤫 Privacy Policy </h3>
+                <p class="lead-2 fw-400 mb-3">
+                    Your privacy is important to us. Last update: November 18, 2018
+                </p>
+            </div>
 
-            <h1>Privacy Policy</h1>
-            <p class="lead-2 opacity-90 mt-6">Last update: November 18, 2018</p>
-
-          </div>
         </div>
-
-      </div>
-    </header>
+    </div>
+</header>
+    
 
     <main class="main-content">
 
       <section class="section">
         <div class="container">
           <div class="row">
-            <div class="col-md-10 mx-auto">
+            <div class="col-md-12 mx-auto">
 
               <h4>General Information</h4>
               <p>
