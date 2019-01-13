@@ -58,7 +58,8 @@ class BlogPostController extends Controller
      */
     public function show(BlogPost $blogPost)
     {
-        //
+        $blogPost = BlogPost::where('slug', $blogPost->slug)->first();
+        return view('blog.show', compact('blogPost'));
     }
 
     /**
@@ -69,7 +70,8 @@ class BlogPostController extends Controller
      */
     public function edit(BlogPost $blogPost)
     {
-        //
+        $post = BlogPost::where('slug', $post->slug)->first();
+        return view('blog.edit', compact('post'));  
     }
 
     /**
@@ -81,7 +83,20 @@ class BlogPostController extends Controller
      */
     public function update(Request $request, BlogPost $blogPost)
     {
-        //
+        // Find selected interview
+        $post = BlogPost::where('slug', $post->slug)->first();
+
+        // Update selected interview fields
+        $post->title = request('title');
+        $post->image = request('image');
+        $post->slug = str_slug(request('title'), '-');
+        $post->summary = request('summary');
+        $post->body = request('body');
+        $post->featured = request('featured');
+
+        $post->save();
+
+        return redirect('/blog');
     }
 
     /**
@@ -92,6 +107,6 @@ class BlogPostController extends Controller
      */
     public function destroy(BlogPost $blogPost)
     {
-        //
+        $post = BlogPost::where('slug', $post->slug)->delete();
     }
 }

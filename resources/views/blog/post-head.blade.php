@@ -22,16 +22,6 @@
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
     <link rel="icon" href="assets/img/favicon.png">
 
-    <!--  Open Graph Tags -->
-    <!-- Facebook OG Image -->
-    <meta property="og:image" content="https://placid.app/u/1mmlv?img={{$interview->interview_profile}}&title={{$interview->title}}&url=https://www.coderstory.io/interviews/{{ $interview->slug }}" />
-    <meta property="og:image:height" content="600" />
-    <meta property="og:image:width" content="1200" />
-
-    <!-- Twitter Card Image -->
-    <meta property="twitter:image" content="https://placid.app/u/1mmlv?img={{$interview->interview_profile}}&title={{$interview->title}}&url=https://www.coderstory.io/interviews/{{ $interview->slug }}" />
-    <meta name="twitter:card" content="summary_large_image">
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
     <script>
@@ -48,15 +38,6 @@
 
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-
-            <div class="navbar-left">
-                <button class="navbar-toggler" type="button">☰</button>
-                <a class="navbar-brand text-white" href="#">
-                    CoderStory
-                </a>
-            </div>
 
             <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
