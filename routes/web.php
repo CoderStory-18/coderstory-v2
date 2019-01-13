@@ -15,7 +15,8 @@
 // Route::get('/interviews/tags/{tag}', 'TagController@interviewIndex');
 
 Route::get('interviews/by_tags/', 'InterviewController@byTags');
-Route::get('posts/by_categories/', 'PostController@byCategories');
+Route::get('/posts/by_categories/', 'PostController@byCategory');
+
 Auth::routes();
 
 // Interview Controller 

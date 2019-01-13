@@ -61,10 +61,10 @@
                 <a href="/posts" class="badge badge-secondary ml-3 p-3">All</a>
                 @foreach($categories as $category)
                 <a href=" @if(in_array($category, $selected_categories)){{
-            			'/posts/by_category?' .
+            			'/posts/by_categories?' .
             			join('&', array_map(function($item) { return 'categories[]=' . $item; }, array_diff($selected_categories, [$category])))
           				}}@else{{
-						'/posts/by_category?categories[]=' . $tag . '&' .
+						'/posts/by_categories?categories[]=' . $category . '&' .
 						join('&', array_map(function($item) { return 'categories[]=' . $item; }, $selected_categories))
 						}}
 						@endif
@@ -81,8 +81,7 @@
 
                     {{ $category }}
                 </a>
-
-                @endforeach
+                @endforeach            
             </div>
         </div>
         <div class="card-columns">

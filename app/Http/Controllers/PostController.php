@@ -16,8 +16,9 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::all();
+        $categories = Category::all();
         $selected_categories = [];
-        return view('blog.index', compact('posts', 'categories'));
+        return view('blog.index', compact('posts', 'categories', 'category'));
     }
 
     /**
@@ -121,14 +122,21 @@ class PostController extends Controller
         $selected_categories = $request->get('categories') ? $request->get('categories') : [];
 
         $ids = Post::all()->pluck('id')->all();
- 
+
         foreach ($selected_categories as $selected_category) {
+    
             $category = Category::get()->where('name', $selected_category)->first();
-            $category_post_ids = $category->posts()->pluck('id')->toArray();
-            $ids = array_intersect($ids, $category_post_ids);
+
+           
+            $cat_posts_ids = $category->posts()->pluck('id')->toArray();
+
+            
+            $ids = array_intersect($ids, $cat_posts_ids);
         }
- 
+
         $posts = Post::find($ids);
-        return view('blog.index', compact('interviews', 'selected_categories'));
+
+        // render the view
+        return view('posts.index', compact('posts', 'selected_categories'));
     }
 }
