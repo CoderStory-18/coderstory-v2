@@ -15,16 +15,20 @@
 // Route::get('/interviews/tags/{tag}', 'TagController@interviewIndex');
 
 Route::get('interviews/by_tags/', 'InterviewController@byTags');
+Route::get('posts/by_categories/', 'PostController@byCategories');
 Auth::routes();
 
 // Interview Controller 
 Route::resource('/interviews', 'InterviewController');
+Route::resource('/posts', 'PostController');
 
 Route::get('/tags', 'TagController@index');
 Route::get('tags/create', 'TagController@create');
 Route::post('tags/', 'TagController@store');
 
-Route::resource('/blog', 'BlogPostController');
+Route::get('/categories', 'CategoryController@index');
+Route::get('categories/create', 'CategoryController@create');
+Route::post('categories/', 'CategoryController@store');
 
 Route::resource('/resources', 'ResourceController');
 

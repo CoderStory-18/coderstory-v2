@@ -2,22 +2,23 @@
 
 namespace App\Http\Controllers;
 
-use App\Tag;
+use App\Category;
 use Illuminate\Http\Request;
 
-class TagController extends Controller
+class CategoryController extends Controller
 {
-      /**
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Tag $tag)
+    public function index()
     {
-        $tags = Tag::all();
+        $categories = Category::all();
 
-        return view('tags.index', compact('tags'));
+        return view('categories.index', compact('categories'));
     }
+
 
     /**
      * Store a newly created resource in storage.
@@ -27,21 +28,20 @@ class TagController extends Controller
      */
     public function store(Request $request)
     {
-        $tag = Tag::create([
+        $category = Category::create([
             'name' => request('name')
         ]);
 
-        return redirect('/tags');
-
+        return redirect('/categories');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Tag  $tag
+     * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function show(Tag $tag)
+    public function show(Category $category)
     {
         //
     }
@@ -49,10 +49,10 @@ class TagController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Tag  $tag
+     * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function edit(Tag $tag)
+    public function edit(Category $category)
     {
         //
     }
@@ -61,10 +61,10 @@ class TagController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Tag  $tag
+     * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Tag $tag)
+    public function update(Request $request, Category $category)
     {
         //
     }
@@ -72,10 +72,10 @@ class TagController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Tag  $tag
+     * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Tag $tag)
+    public function destroy(Category $category)
     {
         //
     }

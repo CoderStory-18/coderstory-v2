@@ -5,11 +5,11 @@
     <div class="overlay opacity-95" style="background-color: #0D1F2D"></div>
     <div class="container">
         <div class="row">
-            <div class="col-md-8 py-3 flex-grow ">
+            <div class="col-md-10 py-3 flex-grow ">
                 <h2><strong>Interviews with Developers and Indie Hackers</strong></h2>
                 <p class="mt-3">
                     We learn best from each other. We interview developers and indie hackers weekly to learn about
-                    their experiences, their challenges and more.
+                    their experiences, <br> their challenges and more.
                 </p>
                 <small>
                     Subscribe to our weekly newsletter to get our latest interviews & articles straight to your inbox.

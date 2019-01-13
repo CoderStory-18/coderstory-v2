@@ -110,7 +110,7 @@
 
         <nav class="flexbox mb-5">
             <a class="btn btn-dark disabled"></a>
-            <a class="btn btn-dark border" href="/blog"> 👉🏽 Read More</a>
+            <a class="btn btn-dark border" href="/posts"> 👉🏽 Read More</a>
         </nav>
 
 

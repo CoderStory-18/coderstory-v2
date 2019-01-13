@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use Carbon\Carbon;
 use App\Interview;
 use App\Tag;
-use App\BlogPost;
+use App\Post;
 use Illuminate\Http\Request;
 
 class InterviewController extends Controller
@@ -139,10 +139,10 @@ class InterviewController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function featured(BlogPost $blogPost)
+    public function featured(Post $post)
     {
         $interviews = Interview::where('featured', 1 )->get(); 
-        $posts = BlogPost::where('featured', 1)->get();
+        $posts = Post::where('featured', 1)->get();
         return view('other.index', compact('interviews', 'posts'));
 
         // dd($posts);

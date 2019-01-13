@@ -11,7 +11,7 @@
 </header>
 <div class="container">
 
-    <form action="//blog/{{ $post->slug }}" method="POST">
+    <form action="/posts/{{ $post->slug }}" method="POST">
         {{ method_field('PATCH') }}
         {{ csrf_field() }}
 
@@ -33,6 +33,19 @@
         <div class="form-group">
             <label for="body">Blog Body</label>
             <input type="textarea" class="form-control" id="create" name="body" value="{{ $post->body }}">
+        </div>
+
+        <div class="form-group">
+            <select class="form-control" placeholder="Select input" name="author" value="$post->author">
+                <option value="Jess Wallace">Jess Wallace</option>
+                <option value="Ben Wallace">Ben Wallace</option>
+                <option value="Guest">Guest</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="author_link">Author Link</label>
+            <input type="text" class="form-control" name="author_link" value=" {{ $post->author_link }}">
         </div>
 
         <div class="form-group">

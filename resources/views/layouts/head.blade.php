@@ -21,6 +21,7 @@
 
     <!-- Styles -->
     <link href="/css/page.min.css" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
@@ -91,7 +92,7 @@
                         <nav class="nav align-right">
                             <a class="nav-link disabled nav-dark"><strong>THE CONTENT</strong></a>
                             <a class="nav-link" href="/interviews"> 👩🏽‍💻 Interviews</a>
-                            <a class="nav-link" href="/blog">📚 Our Blog</a>
+                            <a class="nav-link" href="/posts">📚 Our Blog</a>
                             <a class="nav-link" href="/resources">🎒 Resources</a>
                             <div class="dropdown-divider" style="margin-left: 0rem; margin-right: 0rem;"></div>
                             <a class="nav-link disabled nav-dark"><strong>OUR STORY</strong></a>
@@ -104,6 +105,7 @@
                             <a class="nav-link" href="/privacy"> 🤫 Privacy</a>
                         </nav>
                     </li>
+                   
                 </nav>
             </section>
 
