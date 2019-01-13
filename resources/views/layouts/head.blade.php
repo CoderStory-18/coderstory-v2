@@ -98,11 +98,12 @@
                             <div class="dropdown-divider" style="margin-left: 0rem; margin-right: 0rem;"></div>
                             <a class="nav-link disabled nav-dark"><strong>OUR STORY</strong></a>
                             <a class="nav-link" href="/about"> 🕶 About</a>
-                            <a class="nav-link" href="https://coderstory.nolt.io"> 🚧 Roadmap</a>
+                            <a class="nav-link" target="_blank" href="https://coderstory.nolt.io"> 🚧 Roadmap</a>
                             <div class="dropdown-divider" style="margin-left: 0rem; margin-right: 0rem;"></div>
                             <a class="nav-link disabled nav-dark"><strong>BE INVOLVED</strong></a>
                             <a class="nav-link" href="/about"> 🖋 Contribute</a>
-                            <a class="nav-link" href="https://coderstory.nolt.io"> ❓ FAQ</a>
+                            <a class="nav-link" href="/faq"> ❓ FAQ</a>
+                            <a class="nav-link" href="/privacy"> 🤫 Privacy</a>
                         </nav>
                     </li>
                 </nav>

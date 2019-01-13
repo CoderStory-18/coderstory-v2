@@ -67,21 +67,26 @@
 
             <section class="navbar-mobile">
                 <nav class="nav nav-navbar ml-auto">
-                    <a class="nav-link" href="/interviews">Interviews</a>
-                    <a class="nav-link" href="/blog">Blog</a>
+                    <!-- <a class="nav-link" href="/interviews"> Interviews</a>
+                    <a class="nav-link" href="/blog">Blog</a> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#">More<span class="arrow"></span></a>
+                        <a class="nav-link" href="#"> All Access <span class="arrow"></span></a>
                         <nav class="nav align-right">
-                            <a class="nav-link" href="/about">About</a>
-                            <a class="nav-link" href="/resources">Resources</a>
+                            <a class="nav-link disabled nav-dark"><strong>THE CONTENT</strong></a>
+                            <a class="nav-link" href="/interviews"> 👩🏽‍💻 Interviews</a>
+                            <a class="nav-link" href="/blog">📚 Our Blog</a>
+                            <a class="nav-link" href="/resources">🎒 Resources</a>
+                            <div class="dropdown-divider" style="margin-left: 0rem; margin-right: 0rem;"></div>
+                            <a class="nav-link disabled nav-dark"><strong>OUR STORY</strong></a>
+                            <a class="nav-link" href="/about"> 🕶 About</a>
+                            <a class="nav-link" target="_blank" href="https://coderstory.nolt.io"> 🚧 Roadmap</a>
+                            <div class="dropdown-divider" style="margin-left: 0rem; margin-right: 0rem;"></div>
+                            <a class="nav-link disabled nav-dark"><strong>BE INVOLVED</strong></a>
+                            <a class="nav-link" href="/about"> 🖋 Contribute</a>
+                            <a class="nav-link" href="/faq"> ❓ FAQ</a>
+                            <a class="nav-link" href="/privacy"> 🤫 Privacy</a>
                         </nav>
                     </li>
-
-                    <!-- <a class="nav-link" href="/posts">Interviews</a>
-          <a class="nav-link" href="/posts">
-            Submit
-          </a> -->
-
                 </nav>
             </section>
 

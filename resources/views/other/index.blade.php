@@ -26,38 +26,115 @@
                         </div>
                     </form>
                 </div>
+
             </div>
         </div>
 </header>
 
-<section class="section text-black p-0" style="background-color: #fff;">
+<!-- Interviews Featured -->
+<section class="section text-black border-bottom p-0" style="background-color: #fff;">
     <div class="container">
         <div class="row no-gutters">
-            <div class="col-md-12 pt-8 pb-8">
-                <h1> 👩🏽‍💻 Interviews with developers</h1>
+            <div class="col-md-12 pt-8 pb-2">
+                <h3> 👩🏽‍💻 Interviews with developers</h3>
                 <p class="lead">
                     Instrument cultivated alteration any favourable expression law far nor. Both new like tore but
                     year. An from mean on with when sing pain.
                 </p>
-                <div class="card shadow-7 my-5">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <a href="blog-single.html"><img class="pt-4 pb-4 ml-4" style="width:100px; border-radius:100%;" src="https://pbs.twimg.com/profile_images/1067193262501449729/KzfPUhH6_400x400.jpg"
-                                    alt="..."></a>
-                        </div>
+            </div>
+        </div>
 
-                        <div class="col-md-10">
-                            <div class="pt-4 pl-0">
-                                <p class="mb-0"><strong>Interview Title</strong></p>
-                                <p class="mb-0">With <strong>Jess Wallace</strong></p>
-                                <p class="mb-0">Section for Tags</p>
-                            </div>
+        <div class="row gap-y mb-3">
+            @foreach ($interviews as $interview)
+            <div class="col-md-6 col-xl-4 ">
+                <a class="product-1" href="/interviews/{{ $interview->slug }}">
+                    <span class="badge badge-pill badge-danger badge-pos-left">Featured</span>
+
+                    <img src="{{ $interview->interview_profile }}" alt="product">
+
+                    <div class="product-detail">
+                        <div>
+                            <h6>{{ $interview->interview_name }}</h6>
+                            <p>{{ $interview->title }}</p>
                         </div>
+                        <!-- <div class="product-price"><span class="unit">$</span>1,299</div> -->
+                    </div>
+                </a>
+            </div>
+            @endforeach
+        </div>
+
+        <nav class="flexbox mb-5">
+            <a class="btn btn-white disabled"></a>
+            <a class="btn btn-white border" href="/interviews"> 👉🏽 Read More</a>
+        </nav>
+
+    </div>
+    </div>
+</section>
+
+<!-- Blog -->
+<section class="section bg-dark text-white p-0" style="background-color: #fff;">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-md-12 pt-7 pb-2">
+                <h3> 📚 Tech Blog </h3>
+                <p class="lead">
+                    Instrument cultivated alteration any favourable expression law far nor. Both new like tore but
+                    year. An from mean on with when sing pain.
+                </p>
+            </div>
+        </div>
+        <div class="row gap-y mt-2 mb-3">
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card card-inverse border hover-shadow-6 d-block">
+                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/1.jpg" alt="Card image cap"></a>
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#">We relocated to a new garage</a></h5>
+                        <p>Some quick example text to build on the card title and make up the bulk of the card's
+                            content. Some quick example text to build on the card title.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card card-inverse border hover-shadow-6 d-block">
+                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/2.jpg" alt="Card image cap"></a>
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#">Top 5 content marketing strategies</a></h5>
+                        <p>Some quick example text to build on the card title and make up the bulk of the card's
+                            content. Some quick example text to build on the card title.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 d-none d-lg-flex">
+                <div class="card card-inverse border hover-shadow-6 d-block">
+                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/3.jpg" alt="Card image cap"></a>
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#">Best practices for minimalist design</a></h5>
+                        <p>Some quick example text to build on the card title and make up the bulk of the card's
+                            content. Some quick example text to build on the card title.</p>
                     </div>
                 </div>
             </div>
 
         </div>
+
+        <nav class="flexbox mb-5">
+            <a class="btn btn-dark disabled"></a>
+            <a class="btn btn-dark border" href="/blog"> 👉🏽 Read More</a>
+        </nav>
+
+
+    </div>
+
+    </div>
     </div>
 </section>
+
+
 @endsection

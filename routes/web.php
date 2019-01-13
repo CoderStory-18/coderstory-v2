@@ -42,9 +42,7 @@ Route::get('/about', function(){
     return view('other.about');
 });
 
-Route::get('/index', function(){
-    return view('other.index');
-});
+Route::get('/index', 'InterviewController@featured');
 
 Route::resource('/resources', 'ResourceController');
 Route::resource('/blog', 'BlogPostController');

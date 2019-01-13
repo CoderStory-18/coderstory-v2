@@ -13,13 +13,6 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
-    <script>
-        tinymce.init({
-            selector: '#interviewcreate',
-            plugins: "link, image, code",
-        });
-    </script>
 
     <!-- Styles -->
     <link href="/css/page.min.css" rel="stylesheet">
@@ -65,8 +58,18 @@
                 </a>
             </div>
 
+            <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+
+            <div class="navbar-left">
+                <button class="navbar-toggler" type="button">☰</button>
+                <a class="navbar-brand text-white" href="/">
+                    CoderStory
+                </a>
+            </div>
+
             <section class="navbar-mobile">
-            <nav class="nav nav-navbar ml-auto">
+                <nav class="nav nav-navbar ml-auto">
                     <!-- <a class="nav-link" href="/interviews"> Interviews</a>
                     <a class="nav-link" href="/blog">Blog</a> -->
                     <li class="nav-item">
@@ -79,17 +82,19 @@
                             <div class="dropdown-divider" style="margin-left: 0rem; margin-right: 0rem;"></div>
                             <a class="nav-link disabled nav-dark"><strong>OUR STORY</strong></a>
                             <a class="nav-link" href="/about"> 🕶 About</a>
-                            <a class="nav-link" href="https://coderstory.nolt.io"> 🚧 Roadmap</a>
+                            <a class="nav-link" target="_blank" href="https://coderstory.nolt.io"> 🚧 Roadmap</a>
                             <div class="dropdown-divider" style="margin-left: 0rem; margin-right: 0rem;"></div>
                             <a class="nav-link disabled nav-dark"><strong>BE INVOLVED</strong></a>
                             <a class="nav-link" href="/about"> 🖋 Contribute</a>
-                            <a class="nav-link" href="https://coderstory.nolt.io"> ❓ FAQ</a>
+                            <a class="nav-link" href="/faq"> ❓ FAQ</a>
+                            <a class="nav-link" href="/privacy"> 🤫 Privacy</a>
                         </nav>
                     </li>
                 </nav>
-
-                </nav>
             </section>
+
+        </div>
+    </nav><!-- /.navbar -->
 
         </div>
     </nav><!-- /.navbar -->

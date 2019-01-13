@@ -141,7 +141,7 @@ class InterviewController extends Controller
     public function featured()
     {
         $interviews = Interview::where('featured', 1 )->get();
-        return view('index', compact('interviews'));
+        return view('other.index', compact('interviews'));
     }
 
      /**
