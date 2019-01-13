@@ -23,21 +23,19 @@
         </div>
     </div>
 </header>
-<!-- 
-Share a story, explain a concept, write a guide, give some recommendations, or whatever you want to write about, as long as it keeps related to startups! We only accept unique content and the process is really simple.
-
-You write it.
-
-We read it and provide some feedback.
-
-We improve it.
-
-The article is published.
-
-We all promote it and reach thousands of readers.
-
-If you are looking to write a guest post on Failory, please email us to hello@failory.com. In the email, make sure to submit a few headlines of potential articles! -->
-
+  <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Breadcrumbs
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <nav class="bb-1 bg-gray" aria-label="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb px-0">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item">Contribute</li>
+            </ol>
+        </div>
+    </nav>
 <section class="section">
     <div class="container">
 

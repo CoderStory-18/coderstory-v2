@@ -1,12 +1,12 @@
 @extends('layouts.app')
 @section('content')
-<header class="header text-white pswp__scroll-wrap" style="background-image: url(../img/bg.jpg)" style="padding-top: 0.5rem;">
+<header class="header text-white pswp__scroll-wrap" style="background-image: url(../img/bg.jpg)" style="padding-top: 0.5rem; padding-bottom: 0.5rem;">
     <div class="overlay opacity-95" style="background-color: #0D1F2D"></div>
     <div class="container">
         <div class="row">
-            <div class="col-md-8 py-8 flex-grow ">
-                <h1><strong>We are CoderStory.</strong></h1>
-                <p class="lead mt-5">
+            <div class="col-md-8 py-3 flex-grow ">
+                <h2><strong>We are CoderStory.</strong></h2>
+                <p class="mt-3">
                     We are a community full of developers and indie hackers. We have interviews with experienced and
                     inexperienced developers, articles about programming and curated resources to make you a better
                     developer.
@@ -14,7 +14,7 @@
                 <p>
                     Subscribe to our weekly newsletter to get our latest interviews & articles straight to your inbox.
                 </p>
-                <div class="row mt-5">
+                <div class="row mt-3">
                     <form action="https://builtbyher.us19.list-manage.com/subscribe/post?u=3757dc73cf7e45a04dddc18bd&amp;id=70b2a3e203"
                         method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate col-md-12 input-glass"
                         target="_blank" novalidate="">
@@ -27,6 +27,9 @@
                     </form>
                 </div>
 
+                <p class="font-sm pt-3">If you are a developer and would like to share your story, 
+                    <strong><a href="/contribute">we would love to hear from you!</a></p></strong>
+                        
             </div>
         </div>
 </header>

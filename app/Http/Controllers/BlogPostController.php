@@ -59,7 +59,9 @@ class BlogPostController extends Controller
     public function show(BlogPost $blogPost)
     {
         $blogPost = BlogPost::where('slug', $blogPost->slug)->first();
-        return view('blog.show', compact('blogPost'));
+
+        dd($blogPost);
+        // return view('blog.show', compact('blogPost'));
     }
 
     /**

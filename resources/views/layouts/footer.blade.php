@@ -11,11 +11,7 @@
         </div>
       </footer>
 
-<!-- Scripts -->
-<script src="/js/page.min.js"></script>
-
-<!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5281564.js"></script>
-<!-- End of HubSpot Embed Code -->
-
+ <!-- Scripts -->
+ <script src="/js/page.min.js"></script>
+ <script src="/js/script.js"></script>
 

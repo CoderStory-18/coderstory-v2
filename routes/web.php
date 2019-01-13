@@ -34,9 +34,13 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 // Individual Web Pages
-Route::get('/', function () {
-    return view('other.comingsoon');
-});
+
+
+Route::get('/', 'InterviewController@featured');
+
+// Route::get('/', function () {
+//     return view('other.comingsoon');
+// });
 
 Route::get('/contribute', function(){
     return view('other.contribute');
@@ -49,8 +53,6 @@ Route::get('/about', function(){
 Route::get('/faq', function(){
     return view('other.faq');
 });
-
-Route::get('/index', 'InterviewController@featured');
 
 
 

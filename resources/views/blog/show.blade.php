@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="text-center mt-2">
-                    <h2>New published books to read by a product designer</h2>
+                    <h2>{{ $blogPost->title}}</h2>
                     <p>[DATE]<a href="#"> - [Category]</a></p>
                 </div>
             </div>
