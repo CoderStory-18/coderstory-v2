@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
 use App\BlogPost;
 use Illuminate\Http\Request;
 
@@ -16,6 +17,7 @@ class BlogPostController extends Controller
     {
         $posts = BlogPost::all();
         return view('blog.index', compact('posts'));
+        // dd($posts);
     }
 
     /**
@@ -58,10 +60,11 @@ class BlogPostController extends Controller
      */
     public function show(BlogPost $blogPost)
     {
-        $blogPost = BlogPost::where('slug', $blogPost->slug)->first();
+        $blogPost = BlogPost::where('slug',$blogPost->slug)->first();
 
+        // $blogPost = BlogPost::where('slug', $blogPost->slug)->first();
         dd($blogPost);
-        // return view('blog.show', compact('blogPost'));
+        return view('blog.show', compact('blogPost'));
     }
 
     /**
@@ -111,4 +114,11 @@ class BlogPostController extends Controller
     {
         $post = BlogPost::where('slug', $post->slug)->delete();
     }
+
+    public function featured()
+    {
+        $posts = BlogPost::all();
+        return view('other.index', compact('posts'));
+    }
+
 }

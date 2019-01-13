@@ -27,9 +27,9 @@
                     </form>
                 </div>
 
-                <p class="font-sm pt-3">If you are a developer and would like to share your story, 
+                <p class="font-sm pt-3">If you are a developer and would like to share your story,
                     <strong><a href="/contribute">we would love to hear from you!</a></p></strong>
-                        
+
             </div>
         </div>
 </header>
@@ -89,41 +89,22 @@
             </div>
         </div>
         <div class="row gap-y mt-2 mb-3">
-
+            @foreach ($posts as $post)
             <div class="col-md-6 col-lg-4">
                 <div class="card card-inverse border hover-shadow-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/1.jpg" alt="Card image cap"></a>
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="#">We relocated to a new garage</a></h5>
-                        <p>Some quick example text to build on the card title and make up the bulk of the card's
-                            content. Some quick example text to build on the card title.</p>
+                    <a href="#"><img class="card-img-top" src="{{ $post->image }}" alt="Card image cap"></a>
+                    <div class="card-body flexbox">
+                        <h6 class="mb-0">
+                            <a class="small" href="#">{{ $post->title }}</a>
+                        </h6>
+                        <a class="text-inherit small-2" href="#">
+                            <!-- {{ $post->created_at }} -->
+                        </a>
                     </div>
                 </div>
             </div>
 
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card card-inverse border hover-shadow-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/2.jpg" alt="Card image cap"></a>
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="#">Top 5 content marketing strategies</a></h5>
-                        <p>Some quick example text to build on the card title and make up the bulk of the card's
-                            content. Some quick example text to build on the card title.</p>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-lg-4 d-none d-lg-flex">
-                <div class="card card-inverse border hover-shadow-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/3.jpg" alt="Card image cap"></a>
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="#">Best practices for minimalist design</a></h5>
-                        <p>Some quick example text to build on the card title and make up the bulk of the card's
-                            content. Some quick example text to build on the card title.</p>
-                    </div>
-                </div>
-            </div>
+            @endforeach
 
         </div>
 
