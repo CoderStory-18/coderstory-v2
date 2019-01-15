@@ -63,9 +63,9 @@
 
                 <a href=" @if(in_array($category, $selected_categories)){{
         '/posts/by_category?' .
-        join('&', array_map(function($item) { return 'categories[]=' . $item; }, array_diff($selected_categories, [$category])))
+        join('&', array_map(function($item) { return 'categories[]=' . $item; }, array_diff($selected_categories, [$category->name])))
           }}@else{{
-        '/posts/by_category?categories[]=' . $category . '&' .
+        '/posts/by_category?categories[]=' . $category->name . '&' .
         join('&', array_map(function($item) { return 'categories[]=' . $item; }, $selected_categories))
         }}
         @endif
@@ -80,7 +80,7 @@
             p-3
             @endif">
 
-                    {{ $category }}
+                    {{ $category->name }}
                 </a>
 
 

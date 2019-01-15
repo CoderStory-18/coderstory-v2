@@ -18,7 +18,7 @@ class PostController extends Controller
         $posts = Post::all();
         $categories = Category::all();
         $selected_categories = [];
-        return view('blog.index', compact('posts', 'categories', 'category'));
+        return view('blog.index', compact('posts', 'categories', 'selected_categories'));
     }
 
     /**
@@ -137,6 +137,6 @@ class PostController extends Controller
         $posts = Post::find($ids);
 
         // render the view
-        return view('posts.index', compact('posts', 'selected_categories'));
+        return view('blog.index', compact('posts', 'selected_categories'));
     }
 }
