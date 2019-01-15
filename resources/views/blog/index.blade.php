@@ -60,28 +60,31 @@
             <div class="gap-multiline-items-1 align-center pb-3">
                 <a href="/posts" class="badge badge-secondary ml-3 p-3">All</a>
                 @foreach($categories as $category)
+
                 <a href=" @if(in_array($category, $selected_categories)){{
-            			'/posts/by_categories?' .
-            			join('&', array_map(function($item) { return 'categories[]=' . $item; }, array_diff($selected_categories, [$category])))
-          				}}@else{{
-						'/posts/by_categories?categories[]=' . $category . '&' .
-						join('&', array_map(function($item) { return 'categories[]=' . $item; }, $selected_categories))
-						}}
-						@endif
-						"
+        '/posts/by_category?' .
+        join('&', array_map(function($item) { return 'categories[]=' . $item; }, array_diff($selected_categories, [$category])))
+          }}@else{{
+        '/posts/by_category?categories[]=' . $category . '&' .
+        join('&', array_map(function($item) { return 'categories[]=' . $item; }, $selected_categories))
+        }}
+        @endif
+        "
                     class=" @if(in_array($category, $selected_categories))
-							  badge badge-primary
-							  ml-3
-							  p-3
-							@else
-							badge badge-secondary
-							ml-3
-							p-3
-        					@endif">
+              badge badge-primary
+              ml-3
+              p-3
+            @else
+            badge badge-secondary
+            ml-3
+            p-3
+            @endif">
 
                     {{ $category }}
                 </a>
-                @endforeach            
+
+
+                @endforeach
             </div>
         </div>
         <div class="card-columns">
