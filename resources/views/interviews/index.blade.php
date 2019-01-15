@@ -62,8 +62,7 @@
 
         <div class="row mb-3">
             <div class="gap-multiline-items-1 align-center pb-3">
-                <a href="/interviews" class="badge badge-secondary ml-3
-							p-3">All</a>
+                <a href="/interviews" class="badge badge-secondary ml-3 p-3">All</a>
 
                 @foreach($tags as $tag)
 
@@ -88,9 +87,9 @@
 
                     {{ $tag }}
                 </a>
-
-
                 @endforeach
+
+                <a href="/interviews" class="badge badge-dark ml-3 p-3"><i class="fa fa-times"></i>  Clear Filter</a>
             </div>
         </div>
 

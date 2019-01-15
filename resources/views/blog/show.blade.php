@@ -37,7 +37,7 @@
                 </p>
                 <div class="gap-xy-2 mt-4 mb-4">
                     @foreach($post->categories as $category)
-                    <a class="badge badge-pill badge-secondary" href="/interviews/by_categories?categories[]={{ $category->name }}">{{
+                    <a class="badge badge-pill badge-secondary" href="/posts/by_category?categories[]={{ $category->name }}">{{
                         $category->name }}</a>
                     @endforeach
                 </div>

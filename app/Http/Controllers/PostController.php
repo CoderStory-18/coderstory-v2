@@ -136,7 +136,9 @@ class PostController extends Controller
 
         $posts = Post::find($ids);
 
+        $categories = Category::all();
+
         // render the view
-        return view('blog.index', compact('posts', 'selected_categories'));
+        return view('blog.index', compact('posts', 'categories','selected_categories'));
     }
 }

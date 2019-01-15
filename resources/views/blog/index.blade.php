@@ -70,8 +70,8 @@
         }}
         @endif
         "
-                    class=" @if(in_array($category, $selected_categories))
-              badge badge-primary
+                    class=" @if(in_array($category->name, $selected_categories))
+              badge badge-dark
               ml-3
               p-3
             @else
@@ -85,6 +85,8 @@
 
 
                 @endforeach
+
+                <a href="/posts" class="badge badge-dark ml-3 p-3"><i class="fa fa-times"></i>  Clear Filter</a>
             </div>
         </div>
         <div class="card-columns">
@@ -95,7 +97,7 @@
                 <div class="overlay opacity-55" style="background-color: #0D1F2D"></div>
                 <div class="card-body px-6 py-8">
                     @foreach($post->categories as $category)
-                    <p><a class="text-uppercase small-4 ls-2 fw-600" href="/categories/{{ $category->name }}">{{
+                    <p><a class="text-uppercase small-4 ls-2 fw-600" href="/posts/by_category?categories[]={{ $category->name }}">{{
                             $category->name }}</a></p>
                     @endforeach
                     <h4><a href="/posts/{{ $post->slug }}">{{ $post->title }}</a></h4>
