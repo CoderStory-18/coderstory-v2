@@ -77,7 +77,7 @@
 </section>
 
 <!-- Blog -->
-<section class="section bg-dark text-white p-0" style="background-color: #fff;">
+<section class="section text-white p-0" style="background-color: #0D1F2D;">
     <div class="container">
         <div class="row no-gutters">
             <div class="col-md-12 pt-7 pb-2">
@@ -109,8 +109,8 @@
         </div>
 
         <nav class="flexbox mb-5">
-            <a class="btn btn-dark disabled"></a>
-            <a class="btn btn-dark border" href="/posts"> 👉🏽 Read More</a>
+            <a class="btn disabled"></a>
+            <a class="btn border text-white" href="/posts"> 👉🏽 Read More</a>
         </nav>
 
 

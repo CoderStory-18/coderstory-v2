@@ -61,24 +61,24 @@
                 <a href="/posts" class="badge badge-secondary ml-3 p-3">All</a>
                 @foreach($categories as $category)
 
-                <a href=" @if(in_array($category, $selected_categories)){{
-        '/posts/by_category?' .
-        join('&', array_map(function($item) { return 'categories[]=' . $item; }, array_diff($selected_categories, [$category->name])))
-          }}@else{{
-        '/posts/by_category?categories[]=' . $category->name . '&' .
-        join('&', array_map(function($item) { return 'categories[]=' . $item; }, $selected_categories))
-        }}
-        @endif
-        "
-                    class=" @if(in_array($category->name, $selected_categories))
-              badge badge-dark
-              ml-3
-              p-3
-            @else
-            badge badge-secondary
-            ml-3
-            p-3
-            @endif">
+                <a href="@if(in_array($category, $selected_categories)){{
+                '/posts/by_category?' .
+                join('&', array_map(function($item) { return 'categories[]=' . $item; }, array_diff($selected_categories, [$category->name])))
+                }}@else{{
+                '/posts/by_category?categories[]=' . $category->name . '&' .
+                join('&', array_map(function($item) { return 'categories[]=' . $item; }, $selected_categories))
+                }}
+                @endif
+                "
+                            class=" @if(in_array($category->name, $selected_categories))
+                    badge badge-dark
+                    ml-3
+                    p-3
+                    @else
+                    badge badge-secondary
+                    ml-3
+                    p-3
+                    @endif">
 
                     {{ $category->name }}
                 </a>
@@ -86,7 +86,7 @@
 
                 @endforeach
 
-                <a href="/posts" class="badge badge-dark ml-3 p-3"><i class="fa fa-times"></i>  Clear Filter</a>
+                <a href="/posts" class="badge badge-dark ml-3 p-3"><i class="fa fa-times"></i> Clear Filter</a>
             </div>
         </div>
         <div class="card-columns">

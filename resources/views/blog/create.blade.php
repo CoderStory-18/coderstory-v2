@@ -3,7 +3,7 @@
 
 <header class="header text-white" style="background-image: url(../img/bg.jpg)" data-overlay="8">
     <div class="container text-center">
-        <h1>Write Interview</h1>
+        <h1>Write Blog Post</h1>
     </div>
 </header>
 

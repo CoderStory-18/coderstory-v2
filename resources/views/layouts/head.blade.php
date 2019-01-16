@@ -105,7 +105,7 @@
                             <a class="nav-link" href="/privacy"> 🤫 Privacy</a>
                         </nav>
                     </li>
-                   
+
                 </nav>
             </section>
 

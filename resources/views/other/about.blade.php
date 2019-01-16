@@ -8,7 +8,7 @@
         <div class="row align-items-center h-100">
 
             <div class="col-md-12 pb-1">
-                <h1 class="display-3">🕶 About Us</h1>
+                <h1 class="display-3">🕶 About</h1>
             </div>
 
         </div>

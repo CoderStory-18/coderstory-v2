@@ -15,27 +15,27 @@
                 </p>
 
                 <nav class=" mt-1">
-                    <a class="btn btn-glass border" href="#interview"> 👩🏽‍💻 Interview</a>
-                    <a class="btn btn-glass border" href="#guestpost"> 📝 Guest Post</a>
+                    <a class="btn btn-glass text-white border" href="#interview"> 👩🏽‍💻 Interview</a>
+                    <a class="btn btn-glass text-white border" href="#guestpost"> 📝 Guest Post</a>
                 </nav>
             </div>
 
         </div>
     </div>
 </header>
-  <!--
+<!--
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       | Breadcrumbs
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !-->
-      <nav class="bb-1 bg-gray" aria-label="breadcrumb">
-        <div class="container">
-            <ol class="breadcrumb px-0">
-                <li class="breadcrumb-item"><a href="/">Home</a></li>
-                <li class="breadcrumb-item">Contribute</li>
-            </ol>
-        </div>
-    </nav>
+<nav class="bb-1 bg-gray" aria-label="breadcrumb">
+    <div class="container">
+        <ol class="breadcrumb px-0">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item">Contribute</li>
+        </ol>
+    </div>
+</nav>
 <section class="section">
     <div class="container">
 
@@ -58,7 +58,7 @@
                 <div class="row gap-y align-items-center text-center bg-light rounded p-5 mt-7">
 
                     <div class="col-md-auto">
-                      <h3>Start your Interview</h3>
+                        <h3>Start your Interview</h3>
                         <p>
                             Answer a few questions that will help us write an interview that perfectly fits your case.
                             Then wait for us to reach you and send you the questions.

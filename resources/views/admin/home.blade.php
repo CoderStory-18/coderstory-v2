@@ -12,25 +12,25 @@
         </div>
 </header>
 <section class="section bg-gray" style="padding-top: 2rem; padding-bottom: 2rem;">
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">Dashboard</div>
 
-                <div class="card-body">
-                    @if (session('status'))
+                    <div class="card-body">
+                        @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
-                    @endif
+                        @endif
 
-                    You are logged in!
+                        You are logged in!
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </section>
 
 @endsection
