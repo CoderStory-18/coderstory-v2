@@ -55,7 +55,6 @@ class InterviewController extends Controller
             'interview_location' => request('interview_location'),
             'interview_profile' => request('interview_profile'),
             'twitter' => request('twitter'),
-            'instagram' => request('instagram'), 
             'website' => request('website')
         ]);
 
@@ -114,7 +113,6 @@ class InterviewController extends Controller
         $interview->interview_location = request('interview_location');
         $interview->interview_profile = request('interview_profile');
         $interview->twitter = request('twitter');
-        $interview->instagram = request('instagram');
         $interview->website = request('website');
         $interview->featured = request('featured');
 

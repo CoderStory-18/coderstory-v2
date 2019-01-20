@@ -36,11 +36,6 @@
         </div>
 
         <div class="form-group">
-            <label for="instagram">Instagram</label>
-            <input type="text" class="form-control" name="instagram">
-        </div>
-
-        <div class="form-group">
             <label for="website">Website</label>
             <input type="text" class="form-control" name="website">
         </div>

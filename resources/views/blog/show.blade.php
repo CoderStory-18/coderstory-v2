@@ -7,7 +7,9 @@
             <div class="col-md-12">
                 <div class="text-center mt-2">
                     <h2>{{ $post->title }}</h2>
-                    <p>{{ $post->created_at }} - By <a href="{{ $post->author_link }}"> {{ $post->author }}</a></p>
+
+                    
+                    <p>{{ $post->created_at->toFormattedDateString() }} - By <a href="{{ $post->author_link }}"> {{ $post->author }}</a></p>
                 </div>
             </div>
         </div>
@@ -48,13 +50,9 @@
                      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
                      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
-                    var disqus_config = function () {
-                        this.page.url = '{{ Request::url() }}'; // Replace PAGE_URL with your page's canonical URL variable
-                        this.page.identifier = {
-                            {
-                                $post -> id
-                            }
-                        }; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                     var disqus_config = function () {
+                    this.page.url = '{{ Request::url() }}';  // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = {{ $post->id }}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
                     };
 
                     (function () { // DON'T EDIT BELOW THIS LINE

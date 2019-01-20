@@ -28,17 +28,20 @@
                 </div>
 
                 <p class="font-sm pt-3">If you are a developer and would like to share your story,
-                    <strong><a href="/contribute">we would love to hear from you!</a></p></strong>
+                    <strong><a href="/contribute">we would love to hear from you!</a></strong>
+                </p>
 
             </div>
         </div>
+    </div>
 </header>
 
+<main class="main-content">
 <!-- Interviews Featured -->
 <section class="section text-black border-bottom p-0" style="background-color: #fff;">
     <div class="container">
         <div class="row no-gutters">
-            <div class="col-md-12 pt-8 pb-2">
+            <div class="col-md-12 pt-7 pb-2">
                 <h3> 👩🏽‍💻 Interviews with developers</h3>
                 <p class="lead">
                     Instrument cultivated alteration any favourable expression law far nor. Both new like tore but
@@ -73,14 +76,13 @@
         </nav>
 
     </div>
-    </div>
 </section>
 
 <!-- Blog -->
-<section class="section text-white p-0" style="background-color: #0D1F2D;">
+<section class="section text-white pb-5 pt-8" style="background-color: #0D1F2D;">
     <div class="container">
         <div class="row no-gutters">
-            <div class="col-md-12 pt-7 pb-2">
+            <div class="col-md-12 pt-0 pb-2">
                 <h3> 📚 Tech Blog </h3>
                 <p class="lead">
                     Instrument cultivated alteration any favourable expression law far nor. Both new like tore but
@@ -92,7 +94,7 @@
             @foreach ($posts as $post)
             <div class="col-md-6 col-lg-4">
                 <div class="card card-inverse border hover-shadow-6 d-block">
-                    <a href="#"><img class="card-img-top" src="{{ $post->image }}" alt="Card image cap"></a>
+                    <a href="/posts/{{ $post->slug }}"><img class="card-img-top" src="{{ $post->image }}" alt="Card image cap"></a>
                     <div class="card-body flexbox">
                         <h6 class="mb-0">
                             <a class="small" href="#">{{ $post->title }}</a>
@@ -108,17 +110,33 @@
 
         </div>
 
-        <nav class="flexbox mb-5">
+        <nav class="flexbox">
             <a class="btn disabled"></a>
             <a class="btn border text-white" href="/posts"> 👉🏽 Read More</a>
         </nav>
 
-
-    </div>
-
-    </div>
     </div>
 </section>
 
+<section class="section pb-5 pt-8">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-md-12 pt-0 pb-2">
+                <h3> 🗣 Keep up with us on Social </h3>
+                <p class="lead">
+                    Instrument cultivated alteration any favourable expression law far nor. Both new like tore but
+                    year. An from mean on with when sing pain.
+                </p>
+            </div>
+        </div>
+        <div class="row gap-y mt-2 mb-3">
+            <div class="col-md-12">
+               Test
+            </div>
+        </div>
 
+    </div>
+</section>
+
+</main>
 @endsection

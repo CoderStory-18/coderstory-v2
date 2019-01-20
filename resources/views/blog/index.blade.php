@@ -38,22 +38,6 @@
             </div>
         </div>
 </header>
-<!-- <header class="header text-white" style="background-image: url(../img/bg.jpg)" data-overlay="8">
-    <div class="container text-center">
-
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-
-                <h1>Blog</h1>
-                <p class="lead-2 mt-5">
-                    Get behind the scenes with CoderStory.
-                </p>
-
-            </div>
-        </div>
-    </div>
-</header> -->
-
 <section class="section" style="padding-top: 2rem;">
     <div class="container">
         <div class="row mb-3">
@@ -109,6 +93,5 @@
         </div>
     </div>
 </section>
-
 
 @endsection

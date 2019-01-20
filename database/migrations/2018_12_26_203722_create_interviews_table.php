@@ -24,7 +24,6 @@ class CreateInterviewsTable extends Migration
             $table->string('interview_location');
             $table->string('interview_profile');
             $table->string('twitter')->nullable();
-            $table->string('instagram')->nullable();
             $table->string('website')->nullable();
             $table->timestamps();
         });

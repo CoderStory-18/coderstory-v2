@@ -77,6 +77,17 @@
                             <a class="nav-link" href="/privacy"> 🤫 Privacy</a>
                         </nav>
                     </li>
+
+                    @if(Auth::check())
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> {{ Auth::user()->name }} <span class="arrow"></span></a>
+                        <nav class="nav align-right">
+                            <a class="nav-link" href="/home"> 👩🏽‍💻 Dashboard</a>
+                            <div class="dropdown-divider" style="margin-left: 0rem; margin-right: 0rem;"></div>
+                            <a class="nav-link" href="/logout">Logout</a>
+                        </nav>
+                    </li>
+                    @endif
                 </nav>
             </section>
 
