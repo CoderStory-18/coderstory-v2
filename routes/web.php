@@ -18,6 +18,7 @@
 Route::get('interviews/by_tags/', 'InterviewController@byTags');
 Route::get('posts/by_category', 'PostController@byCategory');
 Auth::routes();
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout'); 
 
 // Interview Controller 
 Route::resource('/interviews', 'InterviewController');

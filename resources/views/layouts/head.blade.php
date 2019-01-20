@@ -112,7 +112,7 @@
                         <nav class="nav align-right">
                             <a class="nav-link" href="/home"> 👩🏽‍💻 Dashboard</a>
                             <div class="dropdown-divider" style="margin-left: 0rem; margin-right: 0rem;"></div>
-                            <a class="nav-link" href="{{ route('logout') }}">Logout</a>
+                            <a class="nav-link" href="/logout">Logout</a>
                         </nav>
                     </li>
                     @endif
