@@ -36,14 +36,14 @@
     <meta property="twitter:image" content="https://placid.app/u/y0kqh?browser%7Cimage=%24DEFAULT%24&browser%7Curl=%24DEFAULT%24&title=%24DEFAULT%24" />
     <meta name="twitter:card" content="summary_large_image">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'UA-118575748-3');
-    </script> -->
+    </script>
 
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>

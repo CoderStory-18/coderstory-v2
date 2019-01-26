@@ -4,16 +4,17 @@
     <div class="overlay opacity-95" style="background-color: #0D1F2D"></div>
     <div class="container">
         <div class="row">
-            <div class="col-md-8 py-3 flex-grow ">
+            <div class="col-md-9 py-3 flex-grow ">
                 <h2><strong>We are CoderStory.</strong></h2>
                 <p class="mt-3">
-                    We are a community full of developers and indie hackers. We have interviews with experienced and
+                Finding your feet in technology? Or established and expanding your knowledge library? We are a platform to share every story. With exclusive interviews from creators, we aim to bring you a new way of learning. Everyone has a story to tell, and you can find or start yours here. 
+                    <!-- We are a community full of developers and indie hackers. We have interviews with experienced and
                     inexperienced developers, articles about programming and curated resources to make you a better
-                    developer.
+                    developer. -->
                 </p>
-                <p>
+                <small>
                     Subscribe to our weekly newsletter to get our latest interviews & articles straight to your inbox.
-                </p>
+                </small>
                 <div class="row mt-3">
                     <form action="https://builtbyher.us19.list-manage.com/subscribe/post?u=3757dc73cf7e45a04dddc18bd&amp;id=70b2a3e203"
                         method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate col-md-12 input-glass"
@@ -27,9 +28,9 @@
                     </form>
                 </div>
 
-                <p class="font-sm pt-3">If you are a developer and would like to share your story,
+                <small class="font-sm pt-3">If you are a developer and would like to share your story,
                     <strong><a href="/contribute">we would love to hear from you!</a></strong>
-                </p>
+                </small>
 
             </div>
         </div>
@@ -42,11 +43,7 @@
     <div class="container">
         <div class="row no-gutters">
             <div class="col-md-12 pt-7 pb-2">
-                <h3> 👩🏽‍💻 Interviews with developers</h3>
-                <p class="lead">
-                    Instrument cultivated alteration any favourable expression law far nor. Both new like tore but
-                    year. An from mean on with when sing pain.
-                </p>
+                <h3 class="mb-3"> 👩🏽‍💻 Featured Interviews</h3>
             </div>
         </div>
 
@@ -54,7 +51,7 @@
             @foreach ($interviews as $interview)
             <div class="col-md-6 col-xl-4 ">
                 <a class="product-1" href="/interviews/{{ $interview->slug }}">
-                    <span class="badge badge-pill badge-danger badge-pos-left">Featured</span>
+                    <!-- <span class="badge badge-pill badge-danger badge-pos-left">Featured</span> -->
 
                     <img src="{{ $interview->interview_profile }}" alt="product">
 
@@ -83,7 +80,7 @@
     <div class="container">
         <div class="row no-gutters">
             <div class="col-md-12 pt-0 pb-2">
-                <h3> 📚 Tech Blog </h3>
+                <h3> 📚 Community Blog </h3>
                 <p class="lead">
                     Instrument cultivated alteration any favourable expression law far nor. Both new like tore but
                     year. An from mean on with when sing pain.
@@ -118,25 +115,18 @@
     </div>
 </section>
 
-<section class="section pb-5 pt-8">
-    <div class="container">
-        <div class="row no-gutters">
-            <div class="col-md-12 pt-0 pb-2">
-                <h3> 🗣 Keep up with us on Social </h3>
-                <p class="lead">
-                    Instrument cultivated alteration any favourable expression law far nor. Both new like tore but
-                    year. An from mean on with when sing pain.
-                </p>
-            </div>
-        </div>
-        <div class="row gap-y mt-2 mb-3">
-            <div class="col-md-12">
-               Test
-            </div>
-        </div>
+<section class="section pt-7 pb-3">
+        <div class="container">
 
-    </div>
-</section>
+          <blockquote class="blockquote">
+            <p class="lead-2">“I changed what I could, and what I couldn't, I endured.”</p>
+            <br>
+            <div><img class="avatar avatar-xl" src="https://i.ytimg.com/vi/bdcvpeO5zDE/hqdefault.jpg" alt="..."></div>
+            <footer>Dorothy Vaughn</footer>
+          </blockquote>
+
+        </div>
+      </section>
 
 </main>
 @endsection

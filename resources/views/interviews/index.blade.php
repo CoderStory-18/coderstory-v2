@@ -6,10 +6,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-10 py-3 flex-grow ">
-                <h2><strong>Interviews with Developers and Indie Hackers</strong></h2>
-                <p class="mt-3">
-                    We learn best from each other. We interview developers and indie hackers weekly to learn about
-                    their experiences, <br> their challenges and more.
+                <h2><strong> 💻 Creator Interviews </strong></h2>
+                <p class="mt-3 lead">
+                Everyone has a story and now you can learn about the evolving creators of our community here. 
                 </p>
                 <small>
                     Subscribe to our weekly newsletter to get our latest interviews & articles straight to your inbox.
@@ -36,26 +35,6 @@
         </div>
 </header>
 
-
-<!-- <header class="header text-white" style="background-image: url(../img/bg.jpg)" data-overlay="8">
-    <div class="container text-center">
-
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-
-                <h1>Interviews with Developers.</h1>
-                <p class="lead-2 mt-5">
-                    Read stories from developers about their experiences.
-                </p>
-
-                <hr class="w-60px my-7">
-
-                <a class="btn btn-lg btn-round btn-white" href="#">Submit Your Interview</a>
-
-            </div>
-        </div>
-    </div>
-</header> -->
 
 <section id="image" class="section bg-gray" style="padding-top: 2rem;">
     <div class="container">

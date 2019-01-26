@@ -6,17 +6,16 @@
     <div class="overlay opacity-95" style="background-color: #0D1F2D"></div>
     <div class="container">
         <div class="row">
-            <div class="col-md-8 py-3 flex-grow ">
+            <div class="col-md-10 py-3 flex-grow ">
                 <h2><strong>🎒 Resources</strong></h2>
                 <p class="mt-3">
-                    Curated lists of resources & tools for entrepreneurs. From hosting providers for your business
-                    websites to tools to monetize your startup, find out the best entrepreneurial links!
+                Your one stop shop for knowledge. With learning minds, comes opportunity to expand your technology belt. Here, we highlight the best resources to maximise your potential as a creator. 
                 </p>
             </div>
         </div>
 </header>
 
-<section class="section overflow-hidden bg-gray pt-7">
+<section class="section overflow-hidden pt-7">
     <div class="container">
         <div data-provide="shuffle">
             <ul class="nav nav-center nav-bold nav-uppercase nav-pills mb-7" data-shuffle="filter">

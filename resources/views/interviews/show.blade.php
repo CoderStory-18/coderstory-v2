@@ -8,7 +8,7 @@
                 <h1 class="display-4">
                     <!-- 💻  -->
                     {{ $interview->title }}</h1>
-                <p class="lead-2 opacity-90 mt-6">
+                <p class="lead-2 opacity-90 mt-4">
                     {{ $interview->summary }}
                 </p>
             </div>

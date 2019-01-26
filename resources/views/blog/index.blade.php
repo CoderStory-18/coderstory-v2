@@ -5,13 +5,10 @@
     <div class="overlay opacity-95" style="background-color: #0D1F2D"></div>
     <div class="container">
         <div class="row">
-            <div class="col-md-8 py-3 flex-grow ">
-                <h2><strong>📚 Technology Blog</strong></h2>
+            <div class="col-md-9 py-3 flex-grow ">
+                <h2><strong>📚 Community Blog</strong></h2>
                 <p class="mt-3">
-                    Read our latest articles and guides. They will help you build, grow, monetize, and get funding for
-                    your startup.
-                    <strong><a href="/contribute#guestpost">If you want to write a guest post, you can read the
-                            instructions here!</a></strong>
+                There are different ways to tell a story. Our blog aims to bring you the insights and opinions from within the industry to cultivate and expand your knowledge base. 
                 </p>
                 <small>
                     Subscribe to our weekly newsletter to get our latest interviews & articles straight to your inbox.
@@ -30,7 +27,7 @@
                 </div>
                 <small>
                     <p class="font-sm pt-3">If you want to write a guest post, you can read the instructions <strong><a
-                                href="/contribute">here!</a></p></strong>
+                                href="/contribute#guestpost"">here!</a></p></strong>
 
                 </small>
 

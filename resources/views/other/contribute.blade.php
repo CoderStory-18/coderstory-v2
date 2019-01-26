@@ -36,33 +36,22 @@
         </ol>
     </div>
 </nav>
-<section class="section">
+<section class="section"  style="padding-top: 3rem;">
     <div class="container">
 
         <div class="row" id="interview">
             <div class="col-lg-11 mx-auto">
                 <h3>👩🏽‍💻 Be Interviewed</h3>
 
-                <p>Interactively foster interoperable schemas rather than client-centric architectures. Progressively
-                    drive collaborative human capital vis-a-vis optimal ideas. Monotonectally fashion cross-platform
-                    leadership skills through high standards in manufactured products. Continually reintermediate.</p>
+               <p>
+               Ira Glass once said; “Great stories happen to those who can tell them.” Are you ready to take our readers on a journey? Get in touch with us and share the next chapter of your story. 
 
-                <p>Interactively foster interoperable schemas rather than client-centric architectures. Progressively
-                    drive collaborative human capital vis-a-vis optimal ideas. Monotonectally fashion cross-platform
-                    leadership skills through high standards in manufactured products. Continually reintermediate.</p>
-
-                <p>Interactively foster interoperable schemas rather than client-centric architectures. Progressively
-                    drive collaborative human capital vis-a-vis optimal ideas. Monotonectally fashion cross-platform
-                    leadership skills through high standards in manufactured products. Continually reintermediate.</p>
+               </p>
 
                 <div class="row gap-y align-items-center text-center bg-light rounded p-5 mt-7">
 
-                    <div class="col-md-auto">
-                        <h3>Start your Interview</h3>
-                        <p>
-                            Answer a few questions that will help us write an interview that perfectly fits your case.
-                            Then wait for us to reach you and send you the questions.
-                        </p>
+                    <div class="col-md-12">
+                        <h3>Share your story</h3>
                         <a class="typeform-share button" href="https://coderstory.typeform.com/to/kfvOdb" data-mode="drawer_left"
                             style="display:inline-block;text-decoration:none;background-color:#0D1F2D;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:12px;line-height:40px;text-align:center;margin:0;height:40px;padding:0px 26px;border-radius:20px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"
                             data-hide-footer=true data-submit-close-delay="5" target="_blank">👉🏽 Let's begin
@@ -95,10 +84,8 @@
         <div class="row" id="guestpost">
             <div class="col-11 mx-auto col-md-11">
                 <h3>📝 Write a Guest Post</h3>
-                <p class="text-light my-6">
-                    Share a story, explain a concept, write a guide, give some recommendations, or whatever you want to
-                    write about, as long as it keeps related to startups! We only accept unique content and the process
-                    is really simple.
+                <p class="text-light my-4">
+                Are you following the latest trends? Want to get something off your chest? We welcome the thoughts and opinions of everyone who has a voice and wants a platform to share it on.
                 </p>
                 <ul class="list-unstyled">
                     <li><span class="mr-1 ti-check text-success small-3"></span> You write it.</li>

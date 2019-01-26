@@ -100,7 +100,7 @@
                                         <td>{{ $post->author }}</td>
                                         <td>{{ $post->featured }}</td>
                                         <td>
-                                            <a href="/post/{{ $post->slug }}/edit">
+                                            <a href="/posts/{{ $post->slug }}/edit">
                                                 <button type="submit" class="btn btn-warning">Edit</button>
                                             </a>
                                         </td>

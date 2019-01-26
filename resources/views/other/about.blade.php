@@ -108,7 +108,7 @@
                 <small>People</small>
                 <h3>The Team</h3>
                 <hr>
-                <p>We're a two person (sibling) team focusing on bringing great content to your screen. </p>
+                <p>We are a family focusing on bringing great content to your screen. </p>
 
             </header>
 
@@ -119,10 +119,10 @@
                             style="height:100px" alt="...">
                     </a>
                     <h5>Jess Wallace</h5>
-                    <small>The Tech.</small>
-                    <p>Signs you'll a, life itself to in signs seed under fruitful good open behold Our of stars whales
-                        forth.</p>
-                    <br>
+                    <small>The Creator.</small>
+                    <p>
+                    A creator on a journey to expand and celebrate the maker community.
+                    </p>
                     <div class="social social-brand">
                         <a class="social-twitter" href="#"><i class="fa fa-twitter"></i></a>
                         <a class="social-instagram" href="#"><i class="fa fa-instagram"></i></a>
@@ -138,9 +138,9 @@
                     </a>
                     <h5>Ben Wallace</h5>
                     <small>The Creative.</small>
-                    <p>So firmament sea them sea. Set saying land signs had the us replenish seed moved rule, place
-                        let.</p>
-                    <br>
+                    <p>
+                    With your voice, he’s on a mission to tell your story. 
+                    </p>
                     <div class="social social-brand">
                         <a class="social-facebook" href="#"><i class="fa fa-facebook"></i></a>
                         <a class="social-twitter" href="#"><i class="fa fa-twitter"></i></a>
