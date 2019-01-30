@@ -13,7 +13,7 @@ class Post extends Model
     }
 
     public function categories() {
-        // 1 product may have many tags 
+        // 1 post may have many tags 
        return $this->belongsToMany(Category::class);
     }
 }

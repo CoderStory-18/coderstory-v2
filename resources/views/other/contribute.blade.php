@@ -10,8 +10,7 @@
             <div class="col-md-10 pb-1">
                 <h3 class="display-4">🖋 Contribute to CoderStory </h3>
                 <p class="lead-2 fw-400 mb-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
+                    Whether you are looking to share your journey into tech or want to share an interesting topic around the latest industry trends. We welcome you to contact us to write an interview or guest post! 
                 </p>
 
                 <nav class=" mt-1">
@@ -90,14 +89,13 @@
                 <ul class="list-unstyled">
                     <li><span class="mr-1 ti-check text-success small-3"></span> You write it.</li>
                     <li><span class="mr-1 ti-check text-success small-3"></span> We review it and provide feedback.</li>
-                    <li><span class="mr-1 ti-check text-success small-3"></span> We improve it</li>
+                    <li><span class="mr-1 ti-check text-success small-3"></span> We make creative changes</li>
                     <li><span class="mr-1 ti-check text-success small-3"></span> We publish the article.</li>
-                    <li><span class="mr-1 ti-check text-success small-3"></span> We all promote it to reach thousands
-                        of readers.</li>
+                    <li><span class="mr-1 ti-check text-success small-3"></span> We all promote it to reach readers.</li>
                 </ul>
                 <p class="text-light my-6">
                     If you are looking to write a guest post on CoderStory, please email us to hello@coderstory.io. In
-                    the email, make sure to submit a few headlines of potential articles!
+                    the email, make sure to submit a few headlines of potential articles you may be interested in writing about!
                 </p>
 
             </div>
