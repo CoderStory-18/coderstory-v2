@@ -5,8 +5,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="display-4">💻 {{ $interview->title }}</h1>
-                <p class="lead-2 opacity-90 mt-6">
+                <h1 class="display-4">
+                    <!-- 💻  -->
+                    {{ $interview->title }}</h1>
+                <p class="lead-2 opacity-90 mt-4">
                     {{ $interview->summary }}
                 </p>
             </div>
@@ -35,12 +37,12 @@
                     <small>{{ $interview->interview_location }}</small>
                     <div class="social social-brand">
                         <a class="social-twitter" href="{{ $interview->twitter }}" target="_blank"><i class="fa fa-twitter"></i></a>
-                        <a class="social-instagram" href="{{ $interview->instagram }}" target="_blank"><i class="fa fa-instagram"></i></a>
                         <a class="social-website" href="{{ $interview->website }}" target="_blank"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
-
-                <!-- <iframe style="border:0;width:180px;height:144px;" src="https://makerads.xyz/ad"></iframe> -->
+                <div class="team-2">
+                    <!-- <iframe style="border:0;width:320px;height:144px;" src="https://makerads.xyz/ad"></iframe> -->
+                </div>
             </div>
             <div class="col-lg-9 mx-auto border shadow-2 rounded p-4">
                 <p>
@@ -59,12 +61,12 @@
                     /**
                      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
                      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-                    
-                    var disqus_config = function () {
+
+                     var disqus_config = function () {
                     this.page.url = '{{ Request::url() }}';  // Replace PAGE_URL with your page's canonical URL variable
                     this.page.identifier = {{ $interview->id }}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
                     };
-                    
+
                     (function () { // DON'T EDIT BELOW THIS LINE
                         var d = document,
                             s = d.createElement('script');
@@ -72,6 +74,7 @@
                         s.setAttribute('data-timestamp', +new Date());
                         (d.head || d.body).appendChild(s);
                     })();
+
                 </script>
                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
                         powered by Disqus.</a></noscript>

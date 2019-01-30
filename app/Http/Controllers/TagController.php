@@ -7,18 +7,6 @@ use Illuminate\Http\Request;
 
 class TagController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function interviewIndex(Tag $tag)
-    {
-        $interviews = $tag->interviews;
-
-        return view('interviews.index', compact('interviews'));
-    }
-
       /**
      * Display a listing of the resource.
      *

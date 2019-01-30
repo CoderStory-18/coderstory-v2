@@ -1,6 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
+
+<header class="header text-white" style="background-image: url(../img/bg.jpg)" data-overlay="8">
+    <div class="container text-center">
+        <h1>Login</h1>
+    </div>
+</header>
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">

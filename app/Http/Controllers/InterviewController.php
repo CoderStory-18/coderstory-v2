@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Carbon\Carbon;
 use App\Interview;
 use App\Tag;
+use App\Post;
 use Illuminate\Http\Request;
 
 class InterviewController extends Controller
@@ -54,7 +55,6 @@ class InterviewController extends Controller
             'interview_location' => request('interview_location'),
             'interview_profile' => request('interview_profile'),
             'twitter' => request('twitter'),
-            'instagram' => request('instagram'), 
             'website' => request('website')
         ]);
 
@@ -113,7 +113,6 @@ class InterviewController extends Controller
         $interview->interview_location = request('interview_location');
         $interview->interview_profile = request('interview_profile');
         $interview->twitter = request('twitter');
-        $interview->instagram = request('instagram');
         $interview->website = request('website');
         $interview->featured = request('featured');
 
@@ -138,10 +137,13 @@ class InterviewController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function featured()
+    public function featured(Post $post)
     {
-        $interviews = Interview::where('featured', 1 )->get();
-        return view('index', compact('interviews'));
+        $interviews = Interview::where('featured', 1 )->get(); 
+        $posts = Post::where('featured', 1)->get();
+        return view('other.index', compact('interviews', 'posts'));
+
+        // dd($posts);
     }
 
      /**

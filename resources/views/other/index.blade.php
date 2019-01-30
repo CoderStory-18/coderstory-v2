@@ -1,20 +1,21 @@
 @extends('layouts.app')
 @section('content')
-<header class="header text-white pswp__scroll-wrap" style="background-image: url(../img/bg.jpg)" style="padding-top: 0.5rem;">
+<header class="header text-white pswp__scroll-wrap" style="background-image: url(../img/bg.jpg)" style="padding-top: 0.5rem; padding-bottom: 0.5rem;">
     <div class="overlay opacity-95" style="background-color: #0D1F2D"></div>
     <div class="container">
         <div class="row">
-            <div class="col-md-8 py-8 flex-grow ">
-                <h1><strong>We are CoderStory.</strong></h1>
-                <p class="lead mt-5">
-                    We are a community full of developers and indie hackers. We have interviews with experienced and
+            <div class="col-md-9 py-3 flex-grow ">
+                <h2><strong>We are CoderStory.</strong></h2>
+                <p class="mt-3">
+                Finding your feet in technology? Or established and expanding your knowledge library? We are a platform to share every story. With exclusive interviews from creators, we aim to bring you a new way of learning. Everyone has a story to tell, and you can find or start yours here. 
+                    <!-- We are a community full of developers and indie hackers. We have interviews with experienced and
                     inexperienced developers, articles about programming and curated resources to make you a better
-                    developer.
+                    developer. -->
                 </p>
-                <p>
+                <small>
                     Subscribe to our weekly newsletter to get our latest interviews & articles straight to your inbox.
-                </p>
-                <div class="row mt-5">
+                </small>
+                <div class="row mt-3">
                     <form action="https://builtbyher.us19.list-manage.com/subscribe/post?u=3757dc73cf7e45a04dddc18bd&amp;id=70b2a3e203"
                         method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate col-md-12 input-glass"
                         target="_blank" novalidate="">
@@ -26,38 +27,106 @@
                         </div>
                     </form>
                 </div>
+
+                <small class="font-sm pt-3">If you are a developer and would like to share your story,
+                    <strong><a href="/contribute">we would love to hear from you!</a></strong>
+                </small>
+
             </div>
         </div>
+    </div>
 </header>
 
-<section class="section text-black p-0" style="background-color: #fff;">
+<main class="main-content">
+<!-- Interviews Featured -->
+<section class="section text-black border-bottom p-0" style="background-color: #fff;">
     <div class="container">
         <div class="row no-gutters">
-            <div class="col-md-12 pt-8 pb-8">
-                <h1> 👩🏽‍💻 Interviews with developers</h1>
+            <div class="col-md-12 pt-7 pb-2">
+                <h3 class="mb-3"> 👩🏽‍💻 Featured Interviews</h3>
+            </div>
+        </div>
+
+        <div class="row gap-y mb-3">
+            @foreach ($interviews as $interview)
+            <div class="col-md-6 col-xl-4 ">
+                <a class="product-1" href="/interviews/{{ $interview->slug }}">
+                    <!-- <span class="badge badge-pill badge-danger badge-pos-left">Featured</span> -->
+
+                    <img src="{{ $interview->interview_profile }}" alt="product">
+
+                    <div class="product-detail">
+                        <div>
+                            <h6>{{ $interview->interview_name }}</h6>
+                            <p>{{ $interview->title }}</p>
+                        </div>
+                        <!-- <div class="product-price"><span class="unit">$</span>1,299</div> -->
+                    </div>
+                </a>
+            </div>
+            @endforeach
+        </div>
+
+        <nav class="flexbox mb-5">
+            <a class="btn btn-white disabled"></a>
+            <a class="btn btn-white border" href="/interviews"> 👉🏽 Read More</a>
+        </nav>
+
+    </div>
+</section>
+
+<!-- Blog -->
+<section class="section text-white pb-5 pt-8" style="background-color: #0D1F2D;">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-md-12 pt-0 pb-2">
+                <h3> 📚 Community Blog </h3>
                 <p class="lead">
                     Instrument cultivated alteration any favourable expression law far nor. Both new like tore but
                     year. An from mean on with when sing pain.
                 </p>
-                <div class="card shadow-7 my-5">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <a href="blog-single.html"><img class="pt-4 pb-4 ml-4" style="width:100px; border-radius:100%;" src="https://pbs.twimg.com/profile_images/1067193262501449729/KzfPUhH6_400x400.jpg"
-                                    alt="..."></a>
-                        </div>
-
-                        <div class="col-md-10">
-                            <div class="pt-4 pl-0">
-                                <p class="mb-0"><strong>Interview Title</strong></p>
-                                <p class="mb-0">With <strong>Jess Wallace</strong></p>
-                                <p class="mb-0">Section for Tags</p>
-                            </div>
-                        </div>
+            </div>
+        </div>
+        <div class="row gap-y mt-2 mb-3">
+            @foreach ($posts as $post)
+            <div class="col-md-6 col-lg-4">
+                <div class="card card-inverse border hover-shadow-6 d-block">
+                    <a href="/posts/{{ $post->slug }}"><img class="card-img-top" src="{{ $post->image }}" alt="Card image cap"></a>
+                    <div class="card-body flexbox">
+                        <h6 class="mb-0">
+                            <a class="small" href="#">{{ $post->title }}</a>
+                        </h6>
+                        <a class="text-inherit small-2" href="#">
+                            <!-- {{ $post->created_at }} -->
+                        </a>
                     </div>
                 </div>
             </div>
 
+            @endforeach
+
         </div>
+
+        <nav class="flexbox">
+            <a class="btn disabled"></a>
+            <a class="btn border text-white" href="/posts"> 👉🏽 Read More</a>
+        </nav>
+
     </div>
 </section>
+
+<section class="section pt-7 pb-3">
+        <div class="container">
+
+          <blockquote class="blockquote">
+            <p class="lead-2">“I changed what I could, and what I couldn't, I endured.”</p>
+            <br>
+            <div><img class="avatar avatar-xl" src="https://i.ytimg.com/vi/bdcvpeO5zDE/hqdefault.jpg" alt="..."></div>
+            <footer>Dorothy Vaughn</footer>
+          </blockquote>
+
+        </div>
+      </section>
+
+</main>
 @endsection

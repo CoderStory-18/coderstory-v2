@@ -29,7 +29,7 @@
             <label for="link">Website Link:</label>
             <input type="text" class="form-control" name="link" value="{{ $resource->link }}">
         </div>
-        
+
         <div class="form-group">
             <label for="promoted">Promoted:</label>
             <input type="text" class="form-control" name="promoted" value="{{ $resource->promoted }}">

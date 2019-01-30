@@ -36,11 +36,6 @@
         </div>
 
         <div class="form-group">
-            <label for="instagram">Instagram</label>
-            <input type="text" class="form-control" name="instagram">
-        </div>
-
-        <div class="form-group">
             <label for="website">Website</label>
             <input type="text" class="form-control" name="website">
         </div>
@@ -52,7 +47,7 @@
 
         <div class="form-group">
             <label for="body">Interview Body</label>
-            <input type="textarea" class="form-control" id="interviewcreate" name="body">
+            <input type="textarea" class="form-control" id="create" name="body">
         </div>
 
         <div class="form-group">

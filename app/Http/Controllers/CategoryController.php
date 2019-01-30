@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\BlogPost;
+use App\Category;
 use Illuminate\Http\Request;
 
-class BlogPostController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,20 +14,11 @@ class BlogPostController extends Controller
      */
     public function index()
     {
-        $posts = BlogPost::all();
-        return view('blog.index', compact('posts'));
+        $categories = Category::all();
+
+        return view('categories.index', compact('categories'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-        return view('blog.create');
-    }
 
     /**
      * Store a newly created resource in storage.
@@ -37,26 +28,20 @@ class BlogPostController extends Controller
      */
     public function store(Request $request)
     {
-        $post = BlogPost::create([
-            'title' => request('title'), 
-            'image' => request('image'),
-            'slug' => str_slug(request('title'), '-'),
-            'summary' => request('summary'), 
-            'body' => request('body'), 
-            'featured' => 0
+        $category = Category::create([
+            'name' => request('name')
         ]);
 
-        return redirect('/blog');
-
+        return redirect('/categories');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\BlogPost  $blogPost
+     * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function show(BlogPost $blogPost)
+    public function show(Category $category)
     {
         //
     }
@@ -64,10 +49,10 @@ class BlogPostController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\BlogPost  $blogPost
+     * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function edit(BlogPost $blogPost)
+    public function edit(Category $category)
     {
         //
     }
@@ -76,10 +61,10 @@ class BlogPostController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\BlogPost  $blogPost
+     * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, BlogPost $blogPost)
+    public function update(Request $request, Category $category)
     {
         //
     }
@@ -87,10 +72,10 @@ class BlogPostController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\BlogPost  $blogPost
+     * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function destroy(BlogPost $blogPost)
+    public function destroy(Category $category)
     {
         //
     }
