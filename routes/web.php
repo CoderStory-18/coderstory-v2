@@ -42,12 +42,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 // Individual Web Pages
 
 
-Route::get('/', 'InterviewController@featured');
+Route::get('/index', 'InterviewController@featured');
 
 
-// Route::get('/', function () {
-//     return view('other.comingsoon');
-// });
+Route::get('/', function () {
+    return view('other.comingsoon');
+});
 
 Route::get('/contribute', function(){
     return view('other.contribute');

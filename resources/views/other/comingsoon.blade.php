@@ -41,7 +41,7 @@
 
             <section class="navbar-mobile">
                 <nav class="nav nav-navbar ml-auto">
-                    <a class="nav-link" href="/interviews">Interviews</a>
+                    {{-- <a class="nav-link" href="/interviews">Interviews</a> --}}
                     <a class="nav-link" href="/privacy">Privacy</a>
                 </nav>
             </section>
