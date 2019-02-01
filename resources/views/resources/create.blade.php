@@ -32,6 +32,8 @@
                 <option value="Software">Software</option>
                 <option value="Education">Education</option>
                 <option value="Community">Community</option>
+                <option value="Health">Health</option>
+                <option value="Other">Other</option>
             </select>
         </div>
 

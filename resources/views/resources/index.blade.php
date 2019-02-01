@@ -39,6 +39,14 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#" data-shuffle="button" data-group="Community">Communities</a>
                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-shuffle="button" data-group="Health">Health & Fitness</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-shuffle="button" data-group="Other">Other</a>
+                </li>
             </ul>
 
 
