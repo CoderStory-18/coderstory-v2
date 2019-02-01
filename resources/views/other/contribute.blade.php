@@ -89,7 +89,7 @@
                 <ul class="list-unstyled">
                     <li><span class="mr-1 ti-check text-success small-3"></span> You write it.</li>
                     <li><span class="mr-1 ti-check text-success small-3"></span> We review it and provide feedback.</li>
-                    <li><span class="mr-1 ti-check text-success small-3"></span> We make creative changes</li>
+                    <li><span class="mr-1 ti-check text-success small-3"></span> We make creative changes.</li>
                     <li><span class="mr-1 ti-check text-success small-3"></span> We publish the article.</li>
                     <li><span class="mr-1 ti-check text-success small-3"></span> We all promote it to reach readers.</li>
                 </ul>
