@@ -61,6 +61,8 @@
         </div>
     </section>
 
+    <h6 class="divider"></h6>
+
 
     {{-- <section class="section bg-gray" style="padding-top:4rem; padding-bottom: 4rem;">
         <div class="container">
