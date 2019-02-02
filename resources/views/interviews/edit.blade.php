@@ -52,7 +52,7 @@
 
             <div class="form-group">
                 <label for="body">Interview Body</label>
-                <input type="textarea" class="form-control"  id="interviewcreate" name="body" value="{{ $interview->body }}">
+                <input type="textarea" class="form-control" id="create" name="body" value="{{ $interview->body }}">
             </div>
 
             <div class="form-group">
