@@ -92,9 +92,6 @@
                         <p>{{ $interview->summary }}</p>
 
 
-
-
-
                     </div>
 
                     <div class="card-footer">
