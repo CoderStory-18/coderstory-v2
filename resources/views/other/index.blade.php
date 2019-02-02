@@ -82,8 +82,8 @@
             <div class="col-md-12 pt-0 pb-2">
                 <h3> 📚 Community Blog </h3>
                 <p class="lead">
-                    Instrument cultivated alteration any favourable expression law far nor. Both new like tore but
-                    year. An from mean on with when sing pain.
+                    There are different ways to tell a story. Our blog aims to bring you the insights and opinions 
+                    from within the industry to cultivate and expand your knowledge base.
                 </p>
             </div>
         </div>
