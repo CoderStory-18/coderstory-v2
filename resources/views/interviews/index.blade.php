@@ -57,11 +57,13 @@
                     class=" @if(in_array($tag, $selected_tags))
 							  badge badge-primary
 							  ml-3
-							  p-3
+                              p-3
+                              mb-3
 							@else
 							badge badge-secondary
 							ml-3
-							p-3
+                            p-3
+                            mb-3
         					@endif">
 
                     {{ $tag }}
