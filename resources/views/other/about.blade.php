@@ -54,7 +54,7 @@
     </section>
 
 
-    <section class="section bg-gray" style="padding-top:4rem; padding-bottom: 4rem;">
+    {{-- <section class="section bg-gray" style="padding-top:4rem; padding-bottom: 4rem;">
         <div class="container">
             <div class="row gap-y">
 
@@ -100,7 +100,7 @@
 
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section class="section">
         <div class="container">
@@ -124,9 +124,9 @@
                     A creator on a journey to expand and celebrate the maker community.
                     </p>
                     <div class="social social-brand">
-                        <a class="social-twitter" href="#"><i class="fa fa-twitter"></i></a>
-                        <a class="social-instagram" href="#"><i class="fa fa-instagram"></i></a>
-                        <a class="social-github" href="#"><i class="fa fa-github"></i></a>
+                        <a class="social-twitter" href="https://twitter.com/jesswallaceuk"><i class="fa fa-twitter"></i></a>
+                        <a class="social-instagram" href="https://www.instagram.com/jesswallaceuk/"><i class="fa fa-instagram"></i></a>
+                        <a class="social-github" href="https://github.com/jesswallace94"><i class="fa fa-github"></i></a>
                     </div>
                 </div>
 
@@ -142,10 +142,9 @@
                     With your voice, he’s on a mission to tell your story. 
                     </p>
                     <div class="social social-brand">
-                        <a class="social-facebook" href="#"><i class="fa fa-facebook"></i></a>
-                        <a class="social-twitter" href="#"><i class="fa fa-twitter"></i></a>
-                        <a class="social-instagram" href="#"><i class="fa fa-instagram"></i></a>
-                        <a class="social-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                        <a class="social-facebook" href="https://www.facebook.com/bennobasanez"><i class="fa fa-facebook"></i></a>
+                        <a class="social-twitter" href="https://twitter.com/benwallaceuk"><i class="fa fa-twitter"></i></a>
+                        <a class="social-instagram" href="https://www.instagram.com/coderstory_io/"><i class="fa fa-instagram"></i></a>
                     </div>
                 </div>
             </div>

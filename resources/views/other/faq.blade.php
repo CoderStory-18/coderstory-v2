@@ -68,7 +68,7 @@
                         <br><br>
 
                         I had such incredible feedback following the event that I have continued to pursue the on-going developement 
-                        of CoderStory to provide people like you to share your story with the world.
+                        of CoderStory to provide a platform for you share your story with the world. 
 
                     </p>
                     <hr class="hr-dash">
@@ -91,7 +91,7 @@
 
                     <hr class="hr-dash">
 
-                    <h6>📨 How do you get in touch with you?</h6>
+                    <h6>📨 Want to contact us?</h6>
                     <p>
                         If you have any questions - please feel free to email us at hello@coderstory.io 
                     </p>
