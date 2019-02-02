@@ -36,17 +36,25 @@
             <div class="row gap-y align-items-center">
 
                 <div class="col-md-10 mx-auto">
-                    <p class="lead">We’re a team of creative and experienced designers and developers. We used to work
-                        as freelancers and we know what do you need and more that, we know what do your customers want
-                        from you.</p>
-                    <p>Everyone realizes why a new common language would be desirable: one could refuse to pay
-                        expensive translators. To achieve this, it would be necessary to have uniform grammar,
-                        pronunciation and more common words.</p>
-                    <p>If several languages coalesce, the grammar of the resulting language is more simple and regular
-                        than that of the individual languages. The new common language will be more simple and regular
-                        than the existing European languages. It will be as simple as Occidental; in fact, it will be
-                        Occidental.</p>
-
+                    <p class="lead">
+                            CoderStory is a platform to share every story. With exclusive interviews from creators; 
+                            we aim to bring you a new way of learning. We believe everyone has a story to tell, and 
+                            you can find or start yours here. 
+                    </p>
+                    <p>
+                            By sharing your stories we want to create conversations that will not only 
+                            provide knowledge and support for the makers of today, but for those who want 
+                            to be inspired as the creators of tomorrow. The industry is always expanding and 
+                            by detailing your journey there is an opportunity to provide a blueprint for the 
+                            community that will bring to the forefront; products and creations that need to 
+                            be shared with the world. 
+                    </p>
+                    <p>         
+                            Coderstory was born from the mind of Jessica Wallace, an evolving maker who wanted 
+                            to challenge the norm and find a way to make the community more tight-knit. 
+                            In a sea of platforms where creators can come together, her mission is to invite people 
+                            from all walks of life to share, educate and celebrate their hard work.     
+                    </p>
                 </div>
 
             </div>
