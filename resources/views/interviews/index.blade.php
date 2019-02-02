@@ -41,7 +41,7 @@
 
         <div class="row mb-3">
             <div class="gap-multiline-items-1 align-center pb-3">
-                <a href="/interviews" class="badge badge-secondary ml-3 p-3">All</a>
+                <a href="/interviews" class="badge badge-secondary ml-3 p-3 mb-3">All</a>
 
                 @foreach($tags as $tag)
 
