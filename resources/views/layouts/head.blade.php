@@ -28,12 +28,14 @@
     <link rel="icon" href="/cs-dark.png">
 
     <!-- Facebook OG Image -->
+    <meta property="og:title" content="CoderStory - Everyone has a story to tell, and you can find or start yours here." />
     <meta property="og:image" content="https://placid.app/u/y0kqh?browser%7Cimage=%24DEFAULT%24&browser%7Curl=%24DEFAULT%24&title=%24DEFAULT%24"/>
     <meta property="og:image:height" content="600"/>
     <meta property="og:image:width" content="1200"/>
 
     <!-- Twitter Card Image -->
     <meta property="twitter:image" content="https://placid.app/u/y0kqh?browser%7Cimage=%24DEFAULT%24&browser%7Curl=%24DEFAULT%24&title=%24DEFAULT%24"/>
+    <meta name="twitter:title" content="CoderStory - Everyone has a story to tell, and you can find or start yours here.">
     <meta name="twitter:card" content="summary_large_image">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
