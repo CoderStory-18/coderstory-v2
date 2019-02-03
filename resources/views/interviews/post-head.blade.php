@@ -28,16 +28,15 @@
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
     <link rel="icon" href="/cs-dark.png">
 
-    <!--  Open Graph Tags -->
     <!-- Facebook OG Image -->
-    <meta property="og:image" content="https://placid.app/u/1mmlv?img={{$interview->interview_profile}}&title={{$interview->title}}&url=https://www.coderstory.io/interviews/{{ $interview->slug }}" />
-    <meta property="og:image:height" content="600" />
-    <meta property="og:image:width" content="1200" />
+    <meta property="og:title" content="CoderStory - {{$interview->title}}" />
+    <meta property="og:image" content="https://placid.app/u/7f1c7?img=%24DEFAULT%24&title={{$interview->title}}&logo=%24DEFAULT%24"/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:image:width" content="1200"/>
 
     <!-- Twitter Card Image -->
-    <meta name="twitter:title" content="CoderStory.io - Giving developers a voice." />
-    <meta name="twitter:description" content="Generate nice Share Images for Twitter and Facebook! Choose from our preset designs and create templates for your meta images. Then fill the elements - like text, photos or website screenshots - dynamically via our API." />
-    <meta property="twitter:image" content="https://placid.app/u/1mmlv?img={{$interview->interview_profile}}&title={{$interview->title}}&url=https://www.coderstory.io/interviews/{{ $interview->slug }}" />
+    <meta name="twitter:title" content="CoderStory - {{$interview->title}}">
+    <meta property="twitter:image" content="https://placid.app/u/7f1c7?img=%24DEFAULT%24&title={{$interview->title}}&logo=%24DEFAULT%24"/>
     <meta name="twitter:card" content="summary_large_image">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->

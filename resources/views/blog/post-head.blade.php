@@ -22,6 +22,16 @@
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
     <link rel="icon" href="/cs-dark.png">
 
+    <meta property="og:title" content="CoderStory - {{$post->title}}" />
+    <meta property="og:image" content="https://placid.app/u/7f1c7?img=%24DEFAULT%24&title={{$post->title}}&logo=%24DEFAULT%24"/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:image:width" content="1200"/>
+
+    <!-- Twitter Card Image -->
+    <meta name="twitter:title" content="CoderStory - {{$post->title}}">
+    <meta property="twitter:image" content="https://placid.app/u/7f1c7?img=%24DEFAULT%24&title={{$post->title}}&logo=%24DEFAULT%24"/>
+    <meta name="twitter:card" content="summary_large_image">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
     <script>
