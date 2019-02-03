@@ -8,9 +8,6 @@
                 <h2><strong>We are CoderStory.</strong></h2>
                 <p class="mt-3">
                 Finding your feet in technology? Or established and expanding your knowledge library? We are a platform to share every story. With exclusive interviews from creators, we aim to bring you a new way of learning. Everyone has a story to tell, and you can find or start yours here. 
-                    <!-- We are a community full of developers and indie hackers. We have interviews with experienced and
-                    inexperienced developers, articles about programming and curated resources to make you a better
-                    developer. -->
                 </p>
                 <small>
                     Subscribe to our weekly newsletter to get our latest interviews & articles straight to your inbox.
