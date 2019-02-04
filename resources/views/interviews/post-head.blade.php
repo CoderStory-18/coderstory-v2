@@ -26,7 +26,7 @@
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-    <link rel="icon" href="/cs-dark.png">
+    <link rel="icon" href="/img/cs-dark.png">
 
     <!-- Facebook OG Image -->
     <meta property="og:title" content="CoderStory - {{$interview->title}}" />
