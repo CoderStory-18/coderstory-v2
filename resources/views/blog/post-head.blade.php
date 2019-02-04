@@ -20,7 +20,7 @@
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-    <link rel="icon" href="/cs-dark.png">
+    <link rel="icon" href="/img/cs-dark.png">
 
     <meta property="og:title" content="CoderStory - {{$post->title}}" />
     <meta property="og:image" content="https://placid.app/u/7f1c7?img=%24DEFAULT%24&title={{$post->title}}&logo=%24DEFAULT%24"/>
