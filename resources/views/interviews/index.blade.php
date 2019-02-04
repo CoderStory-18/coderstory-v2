@@ -82,14 +82,13 @@
                         <img src="{{ $interview->interview_profile }}" height="100" alt="Card image cap">
                         <div class="badges badges-right">
                             @foreach($interview->tags as $tag)
-                            <a class="badge badge-glass badge-primary" href="/tags/{{ $tag->name }}}">{{ $tag->name }}</a>
+                            <a class="badge badge-glass badge-primary" href="/interviews/by_tags?tags[]={{ $tag->name }}}">{{ $tag->name }}</a>
                             @endforeach
                         </div>
 
                     </div>
 
                     <div class="card-body pb-1">
-
                         <h5 class="card-title">{{ $interview->name }}</h5>
                         <p>{{ $interview->summary }}</p>
 

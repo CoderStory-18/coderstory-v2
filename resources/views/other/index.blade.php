@@ -116,7 +116,7 @@
         <div class="container">
 
           <blockquote class="blockquote">
-            <p class="lead-2">“I changed what I could, and what I couldn't, I endured.”</p>
+            <p class="lead-2">I changed what I could, and what I couldn't, I endured.</p>
             <br>
             <div><img class="avatar avatar-xl" src="https://i.ytimg.com/vi/bdcvpeO5zDE/hqdefault.jpg" alt="..."></div>
             <footer>Dorothy Vaughn</footer>
