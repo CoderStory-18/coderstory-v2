@@ -52,13 +52,15 @@
                 @endif
                 "
                             class=" @if(in_array($category->name, $selected_categories))
-                    badge badge-dark
+                            badge badge-primary
                     ml-3
                     p-3
+                    mb-3
                     @else
                     badge badge-secondary
                     ml-3
                     p-3
+                    mb-3
                     @endif">
 
                     {{ $category->name }}
