@@ -89,7 +89,6 @@
                     </div>
 
                     <div class="card-body pb-1">
-
                         <h5 class="card-title">{{ $interview->name }}</h5>
                         <p>{{ $interview->summary }}</p>
 
