@@ -143,7 +143,7 @@
 
                 <div class="col-md-6 team-2">
                     <a href="#">
-                        <img src="https://pbs.twimg.com/profile_images/1064489270331740160/TmgqA2cx_400x400.jpg" class="rounded-circle"
+                        <img src="https://res.cloudinary.com/coderstory/image/upload/v1549314989/q-SjW6aG_400x400.jpg" class="rounded-circle"
                             style="height:100px" alt="...">
                     </a>
                     <h5>Ben Wallace</h5>
