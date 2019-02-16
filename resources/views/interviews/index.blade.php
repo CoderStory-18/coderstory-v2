@@ -76,7 +76,7 @@
 
         <div class="row">
             @foreach ($interviews as $interview)
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="card d-block shadow-4 mb-3">
                     <div class="card-img-top">
                         <img src="{{ $interview->interview_profile }}" height="100" alt="Card image cap">
@@ -89,7 +89,7 @@
                     </div>
 
                     <div class="card-body pb-1">
-                        <h5 class="card-title">{{ $interview->name }}</h5>
+                        <h5><strong>{{ $interview->interview_name }}</strong></h5>
                         <p>{{ $interview->summary }}</p>
 
 

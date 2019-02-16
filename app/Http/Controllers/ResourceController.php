@@ -110,4 +110,7 @@ class ResourceController extends Controller
     {
         Resource::where('id', $resource->id)->first()->delete();
     }
+
+   
+
 }

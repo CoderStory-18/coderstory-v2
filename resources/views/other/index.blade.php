@@ -112,18 +112,44 @@
     </div>
 </section>
 
-<section class="section pt-7 pb-3">
-        <div class="container">
+<!-- Resources -->
+<section class="section text-black pb-5 pt-8" style="background-color: #fff;">
 
-          <blockquote class="blockquote">
-            <p class="lead-2">I changed what I could, and what I couldn't, I endured.</p>
-            <br>
-            <div><img class="avatar avatar-xl" src="https://i.ytimg.com/vi/bdcvpeO5zDE/hqdefault.jpg" alt="..."></div>
-            <footer>Dorothy Vaughn</footer>
-          </blockquote>
+    {{-- <section class="section text-black border-bottom p-0" style="background-color: #fff;"> --}}
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-md-12 pt-0 pb-2">
+                <h3> 🎒 Top Resources </h3>
+                <p class="lead">
+                    Your one stop shop for knowledge. Here, we highlight the best resources to maximise your potential as a creator. 
+                </p>
+            </div>
+        </div>
+        <div class="row gap-y mt-2 mb-3">
+            @foreach ($resources as $resource)
+            <div class="col-md-6 col-lg-3">
+                <div class="card border hover-shadow-6 d-block">
+                    <a href="{{ $resource->link }}" target="_blank"><img class="card-img-top" src="{{ $resource->image }}" alt="{{$resource->name}} Thumbnail"></a>
+                    <div class="card-body">
+                        <h6 class="mb-0">
+                            <a class="small" href="#">{{ $resource->name }}</a>
+                        </h6>
+                        <small class="small-5 text-light text-uppercase ls-2">{{$resource->type}}</small>
+                    </div>
+                </div>
+            </div>
+            @endforeach
 
         </div>
-      </section>
+
+        <nav class="flexbox">
+            <a class="btn disabled"></a>
+            <a class="btn btn-white border" href="/resources"> 👉🏽 See More</a>
+        </nav>
+
+    </div>
+</section>
+
 
 </main>
 @endsection

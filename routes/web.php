@@ -45,6 +45,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'InterviewController@featured');
 
 
+
 // Route::get('/', function () {
 //     return view('other.comingsoon');
 // });
