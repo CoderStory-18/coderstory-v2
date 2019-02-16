@@ -11,11 +11,13 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
+    <script src="https://cloud.tinymce.com/5/tinymce.min.js?apiKey=spxn0x97ujrh8tfukpg2su8zfcxkwnzyarfzwa54hggn244l"></script>
     <script>
         tinymce.init({
             selector: '#create',
-            plugins: "link, image, code",
+            plugins: "link, image, code,emoticons, formatpainter, preview, wordcount",
+            height: 500,
+            browser_spellcheck: true,
         });
     </script>
 
@@ -65,6 +67,28 @@
     "position": "bottom-right"
   })});
   </script>
+
+  <!-- Start of Magnify Widget Snippet -->
+  <script>
+      (function() {
+        var w = window;
+        var d = document;
+        function l() {
+          var s = d.createElement("script");
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "https://app.usemagnify.com/widget/85efd1c6-553d-423f-a276-6c7f66927cc8";
+          var x = d.getElementsByTagName("script")[0];
+          x.parentNode.insertBefore(s, x);
+        }
+        if (w.attachEvent) {
+          w.attachEvent("onload", l);
+        } else {
+          w.addEventListener("load", l, false);
+        }
+      })();
+    </script>
+    <!-- End of Magnify Widget Snippet -->
 
 </head>
 

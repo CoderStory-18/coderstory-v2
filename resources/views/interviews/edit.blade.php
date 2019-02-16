@@ -59,6 +59,12 @@
                 <label for="body">Interview Status</label>
                 <input type="dropdown" class="form-control" name="featured"  id="interviewcreate"  value="{{ $interview->featured }}">
             </div>
+
+            <div class="form-group">
+                <label for="publish">Publish Date/Time</label>
+                <input type="datetime-local" class="form-control" name="publish">
+            </div>
+
             <div class="form-group">
                 <button type="submit" class="btn btn-success">Update</button>
             </div>

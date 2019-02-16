@@ -60,6 +60,11 @@
         </div>
 
         <div class="form-group">
+            <label for="publish">Publish Date/Time</label>
+            <input type="datetime-local" class="form-control" name="publish">
+        </div>
+
+        <div class="form-group">
             <button type="submit" class="btn btn-success">Submit</button>
         </div>
     </form>

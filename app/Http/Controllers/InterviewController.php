@@ -21,7 +21,7 @@ class InterviewController extends Controller
      */
     public function index()
     {
-        $interviews = Interview::all();
+        $interviews = Interview::with('id')->published()->get();
         $selected_tags = [];
         return view('interviews.index', compact('interviews','selected_tags'));
     }
@@ -56,7 +56,8 @@ class InterviewController extends Controller
             'interview_location' => request('interview_location'),
             'interview_profile' => request('interview_profile'),
             'twitter' => request('twitter'),
-            'website' => request('website')
+            'website' => request('website'), 
+            'published_at' => request('publish')
         ]);
 
         $interview->tags()->sync($request->tags, false);
@@ -115,6 +116,7 @@ class InterviewController extends Controller
         $interview->interview_profile = request('interview_profile');
         $interview->twitter = request('twitter');
         $interview->website = request('website');
+        $interview->published_at = request('publish');
         $interview->featured = request('featured');
 
         $interview->save();
