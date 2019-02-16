@@ -49,6 +49,7 @@
                                         <th>Interview With</th>
                                         <th>Interview Title</th>
                                         <th>Featured</th>
+                                        <th>Publish Dttm</th>
                                         <th>Manage</th>
                                     </tr>
                                 </thead>
@@ -59,6 +60,7 @@
                                         <td>{{ $interview->interview_name }}</td>
                                         <td>{{ $interview->title }}</td>
                                         <td>{{ $interview->featured }}</td>
+                                        <td>{{ $interview->published_at }}</td>
                                         <td>
                                             <a href="/interviews/{{ $interview->slug }}/edit">
                                                 <button type="submit" class="btn btn-warning">Edit</button>
