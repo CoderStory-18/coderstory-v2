@@ -5,6 +5,7 @@ use Carbon\Carbon;
 use App\Interview;
 use App\Tag;
 use App\Post;
+use App\Resource;
 use Illuminate\Http\Request;
 
 class InterviewController extends Controller
@@ -141,7 +142,8 @@ class InterviewController extends Controller
     {
         $interviews = Interview::where('featured', 1 )->get(); 
         $posts = Post::where('featured', 1)->get();
-        return view('other.index', compact('interviews', 'posts'));
+        $resources = Resource::where('promoted', 1)->get();
+        return view('other.index', compact('interviews', 'posts', 'resources'));
 
         // dd($posts);
     }

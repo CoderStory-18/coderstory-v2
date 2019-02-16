@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
 
-    <title>CoderStory Interviews - Everyone has a story to tell, and you can find or start yours here.</title>
+    <title>{{ $interview->interview_name}} |  {{$interview->summary }}</title>
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
