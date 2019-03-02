@@ -15,7 +15,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
+        $posts = Post::with('id')->published()->get();
         $categories = Category::all();
         $selected_categories = [];
         return view('blog.index', compact('posts', 'categories', 'selected_categories'));
@@ -48,6 +48,7 @@ class PostController extends Controller
             'body' => request('body'), 
             'author' => request('author'), 
             'author_link' => request('author_link'), 
+            'published_at' => request('publish'),
             'featured' => 0
         ]);
 
@@ -100,7 +101,7 @@ class PostController extends Controller
         $post->featured = request('featured');
         $post->author = request('author');
         $post->author_link = request('author_link'); 
-
+        $post->published_at = request('publish');
         $post->save();
 
         return redirect('/posts');

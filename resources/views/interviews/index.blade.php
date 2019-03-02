@@ -5,7 +5,7 @@
     <div class="overlay opacity-95" style="background-color: #0D1F2D"></div>
     <div class="container">
         <div class="row">
-            <div class="col-md-10 py-3 flex-grow ">
+            <div class="col-md-8 py-3 flex-grow ">
                 <h2><strong> 💻 Creator Interviews </strong></h2>
                 <p class="mt-3 lead">
                 Everyone has a story and now you can learn about the evolving creators of our community here. 
