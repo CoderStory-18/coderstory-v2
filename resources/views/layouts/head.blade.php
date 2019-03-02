@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="CoderStory - a platform to discover exclusive creator interviews and resources to help accelerate your learning">
+    <meta name="keywords" content="technology, tech, tech interviews, interview, creator interview, indie hacker, maker community, tech resources, creator resources, exclusive interviews">
 
     <title>CoderStory - Everyone has a story to tell, and you can find or start yours here.</title>
 
