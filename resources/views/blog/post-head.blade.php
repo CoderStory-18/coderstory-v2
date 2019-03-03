@@ -35,12 +35,16 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-118575748-3');
-    </script>
+            var host = window.location.hostname;
+    
+            if(host != "localhost") {
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+    
+                gtag('config', 'UA-118575748-3');
+            }
+        </script>
 
       <!-- Share -->
       <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5c386f19aea594001162d367&product=social-ab' async='async'></script>

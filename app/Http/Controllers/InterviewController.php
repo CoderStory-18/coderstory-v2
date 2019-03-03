@@ -133,6 +133,8 @@ class InterviewController extends Controller
     public function destroy(Interview $interview)
     {
         Interview::where('slug', $interview->slug)->first()->delete();
+
+        return redirect('/home');
     }
 
      /**
